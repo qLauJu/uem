@@ -1,0 +1,53 @@
+\hypertarget{dst__sensor_8h}{}\section{include/dst\+\_\+sensor.h File Reference}
+\label{dst__sensor_8h}\index{include/dst\+\_\+sensor.\+h@{include/dst\+\_\+sensor.\+h}}
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_dst_sensor}{Dst\+Sensor}}
+\begin{DoxyCompactList}\small\item\em Estrutura que armazena os pinos necessários para manipulação do sensor de distância. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{dst__sensor_8h_a6be2ae2df3fa494125ab4928eaaf7f3e}{Dst\+Sensor\+\_\+init}} (\mbox{\hyperlink{struct_dst_sensor}{Dst\+Sensor}} $\ast$dst)
+\begin{DoxyCompactList}\small\item\em Configura o sensor de distância. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{dst__sensor_8h_a2e907da07ad70676066c9279be409f95}{Dst\+Sensor\+\_\+read}} (\mbox{\hyperlink{struct_dst_sensor}{Dst\+Sensor}} $\ast$dst)
+\begin{DoxyCompactList}\small\item\em Realiza a leitura da distância. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{dst__sensor_8h_a6be2ae2df3fa494125ab4928eaaf7f3e}\label{dst__sensor_8h_a6be2ae2df3fa494125ab4928eaaf7f3e}} 
+\index{dst\+\_\+sensor.\+h@{dst\+\_\+sensor.\+h}!Dst\+Sensor\+\_\+init@{Dst\+Sensor\+\_\+init}}
+\index{Dst\+Sensor\+\_\+init@{Dst\+Sensor\+\_\+init}!dst\+\_\+sensor.\+h@{dst\+\_\+sensor.\+h}}
+\subsubsection{\texorpdfstring{Dst\+Sensor\+\_\+init()}{DstSensor\_init()}}
+{\footnotesize\ttfamily void Dst\+Sensor\+\_\+init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_dst_sensor}{Dst\+Sensor}} $\ast$}]{dst }\end{DoxyParamCaption})}
+
+
+
+Configura o sensor de distância. 
+
+Ao chamar esta função, os pinos trigger e echo devem estar definidos.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dst} & Sensor de distância a ser configurado. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{dst__sensor_8h_a2e907da07ad70676066c9279be409f95}\label{dst__sensor_8h_a2e907da07ad70676066c9279be409f95}} 
+\index{dst\+\_\+sensor.\+h@{dst\+\_\+sensor.\+h}!Dst\+Sensor\+\_\+read@{Dst\+Sensor\+\_\+read}}
+\index{Dst\+Sensor\+\_\+read@{Dst\+Sensor\+\_\+read}!dst\+\_\+sensor.\+h@{dst\+\_\+sensor.\+h}}
+\subsubsection{\texorpdfstring{Dst\+Sensor\+\_\+read()}{DstSensor\_read()}}
+{\footnotesize\ttfamily uint32\+\_\+t Dst\+Sensor\+\_\+read (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_dst_sensor}{Dst\+Sensor}} $\ast$}]{dst }\end{DoxyParamCaption})}
+
+
+
+Realiza a leitura da distância. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dst} & Sensor a ter a distância lida. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint32\+\_\+t Retorna a distância lida em cm. 
+\end{DoxyReturn}

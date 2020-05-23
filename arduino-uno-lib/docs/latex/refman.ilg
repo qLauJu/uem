@@ -1,0 +1,39 @@
+This is makeindex, version 2.15 [TeX Live 2018] (kpathsea + Thai support).
+Scanning input file refman.idx....
+!! Input index error (file = refman.idx, line = 158):
+   -- Extra `@' at position 126 of first argument.
+!! Input index error (file = refman.idx, line = 159):
+   -- Extra `@' at position 120 of first argument.
+!! Input index error (file = refman.idx, line = 160):
+   -- Extra `@' at position 126 of first argument.
+!! Input index error (file = refman.idx, line = 161):
+   -- Extra `@' at position 120 of first argument.
+!! Input index error (file = refman.idx, line = 162):
+   -- Extra `@' at position 126 of first argument.
+!! Input index error (file = refman.idx, line = 163):
+   -- Extra `@' at position 120 of first argument.
+!! Input index error (file = refman.idx, line = 164):
+   -- Extra `@' at position 126 of first argument.
+!! Input index error (file = refman.idx, line = 165):
+   -- Extra `@' at position 120 of first argument.
+!! Input index error (file = refman.idx, line = 166):
+   -- Extra `@' at position 126 of first argument.
+!! Input index error (file = refman.idx, line = 167):
+   -- Extra `@' at position 120 of first argument.
+!! Input index error (file = refman.idx, line = 168):
+   -- Extra `@' at position 126 of first argument.
+!! Input index error (file = refman.idx, line = 169):
+   -- Extra `@' at position 120 of first argument.
+!! Input index error (file = refman.idx, line = 170):
+   -- Extra `@' at position 126 of first argument.
+!! Input index error (file = refman.idx, line = 171):
+   -- Extra `@' at position 120 of first argument.
+!! Input index error (file = refman.idx, line = 172):
+   -- Extra `@' at position 128 of first argument.
+!! Input index error (file = refman.idx, line = 173):
+   -- Extra `@' at position 120 of first argument.
+done (161 entries accepted, 16 rejected).
+Sorting entries....done (1280 comparisons).
+Generating output file refman.ind....done (278 lines written, 0 warnings).
+Output written in refman.ind.
+Transcript written in refman.ilg.

@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'geosanslightregular';
+    src: url('../fonts/geosanslight-webfont.woff2') format('woff2'),
+         url('../fonts/geosanslight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.bg{
+    height: 100%;
+    width: 100%;
+    background-image: url('../../assets/background.jpg');
+    background-size: 100% 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+.title {
+    text-align: center; 
+    font-family: geosanslightregular;
+    font-size: 35pt;
+    text-transform: uppercase;
+    color: white;
+}
+
+.section{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding-top: 25px;
+}
+
+#regButton{
+    align-content: center;
+    width: 100%;
+    text-align: center;
+}
+
+#log{
+    text-align: center;
+    color: white;
+    font-style: italic;
+    width: 100%;
+}
+
+#logLink{
+    color: white;
+    font-weight: bold;
+}
+
+#backButton{
+    color: white;
+    position: fixed;
+    margin: 27px 0 0 25px
+}
+
+.fa{
+    color: white;
+}

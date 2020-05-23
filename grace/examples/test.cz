@@ -1,0 +1,60 @@
+var v1[10]: int;
+var v2[20]: int;
+var v3[10]: string;
+var v4[20]: string;
+var v5[10]: bool;
+var v6[20]: bool;
+
+var a, b[10], c = 1, d, e[2]: int;
+
+var a = 2: int;
+var b = "Hello World": string;
+
+var nonUnitialized1: int;
+
+var nonU1: string;
+
+var v[10]: int;
+var x[2] = {5, true}: int;
+
+def main(): int {
+  for (var a = 0: int; true; true) {
+    var b = "Hello World": string;
+
+    if (false) {
+      stop;
+    }    
+  }
+
+  var v[10]: int;
+
+  while (true) {
+    if (true) {
+      if (false) {
+        var top1[10]: bool;
+      } else {
+        var top2[10]: bool;
+        skip;
+      }
+      var top[10]: bool;
+    }
+  }
+
+ return 0; 
+}
+
+def proc() {
+  var Name: string;
+
+  if (true) {
+    return;
+  }
+}
+
+var expr1 = 10, expr2 = 20: int;
+var result1 = 10 + 20: int;
+var result2 = expr1 + expr2: int;
+var result3 = ((expr2 + result2) / 10) + expr1: int;
+
+result3 = ((10 * result1) + (result1 * result1));
+

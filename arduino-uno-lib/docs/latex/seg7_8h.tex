@@ -1,0 +1,79 @@
+\hypertarget{seg7_8h}{}\section{include/seg7.h File Reference}
+\label{seg7_8h}\index{include/seg7.\+h@{include/seg7.\+h}}
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef uint8\+\_\+t \mbox{\hyperlink{seg7_8h_a0f061d51201e6f66814fd4da54e1407b}{seg7}}\mbox{[}8\mbox{]}
+\begin{DoxyCompactList}\small\item\em Display de 7 segmentos, contem todo os 7 pinos mais o ponto. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{seg7_8h_ac01ba256ab08fb2f198ba66d232121f1}{Seg7\+\_\+init}} (\mbox{\hyperlink{seg7_8h_a0f061d51201e6f66814fd4da54e1407b}{seg7}} display, uint8\+\_\+t a, uint8\+\_\+t b, uint8\+\_\+t c, uint8\+\_\+t d, uint8\+\_\+t e, uint8\+\_\+t f, uint8\+\_\+t g, uint8\+\_\+t dp)
+\begin{DoxyCompactList}\small\item\em Inicializa o display com os pinos. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{seg7_8h_ad4ac0e9b0adce842aa9f98c2c0b3f93a}{Seg7\+\_\+putdigit}} (\mbox{\hyperlink{seg7_8h_a0f061d51201e6f66814fd4da54e1407b}{seg7}} display, uint8\+\_\+t digit)
+\begin{DoxyCompactList}\small\item\em Escreve um dígito no display. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{seg7_8h_a0f061d51201e6f66814fd4da54e1407b}\label{seg7_8h_a0f061d51201e6f66814fd4da54e1407b}} 
+\index{seg7.\+h@{seg7.\+h}!seg7@{seg7}}
+\index{seg7@{seg7}!seg7.\+h@{seg7.\+h}}
+\subsubsection{\texorpdfstring{seg7}{seg7}}
+{\footnotesize\ttfamily typedef uint8\+\_\+t seg7\mbox{[}8\mbox{]}}
+
+
+
+Display de 7 segmentos, contem todo os 7 pinos mais o ponto. 
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{seg7_8h_ac01ba256ab08fb2f198ba66d232121f1}\label{seg7_8h_ac01ba256ab08fb2f198ba66d232121f1}} 
+\index{seg7.\+h@{seg7.\+h}!Seg7\+\_\+init@{Seg7\+\_\+init}}
+\index{Seg7\+\_\+init@{Seg7\+\_\+init}!seg7.\+h@{seg7.\+h}}
+\subsubsection{\texorpdfstring{Seg7\+\_\+init()}{Seg7\_init()}}
+{\footnotesize\ttfamily void Seg7\+\_\+init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{seg7_8h_a0f061d51201e6f66814fd4da54e1407b}{seg7}}}]{display,  }\item[{uint8\+\_\+t}]{a,  }\item[{uint8\+\_\+t}]{b,  }\item[{uint8\+\_\+t}]{c,  }\item[{uint8\+\_\+t}]{d,  }\item[{uint8\+\_\+t}]{e,  }\item[{uint8\+\_\+t}]{f,  }\item[{uint8\+\_\+t}]{g,  }\item[{uint8\+\_\+t}]{dp }\end{DoxyParamCaption})}
+
+
+
+Inicializa o display com os pinos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em display} & Componente do display a ser configurado. \\
+\hline
+{\em a} & Pino A \\
+\hline
+{\em b} & Pino B \\
+\hline
+{\em c} & Pino C \\
+\hline
+{\em d} & Pino D \\
+\hline
+{\em e} & Pino E \\
+\hline
+{\em f} & Pino F \\
+\hline
+{\em g} & Pino G \\
+\hline
+{\em dp} & Pino DP \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{seg7_8h_ad4ac0e9b0adce842aa9f98c2c0b3f93a}\label{seg7_8h_ad4ac0e9b0adce842aa9f98c2c0b3f93a}} 
+\index{seg7.\+h@{seg7.\+h}!Seg7\+\_\+putdigit@{Seg7\+\_\+putdigit}}
+\index{Seg7\+\_\+putdigit@{Seg7\+\_\+putdigit}!seg7.\+h@{seg7.\+h}}
+\subsubsection{\texorpdfstring{Seg7\+\_\+putdigit()}{Seg7\_putdigit()}}
+{\footnotesize\ttfamily void Seg7\+\_\+putdigit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{seg7_8h_a0f061d51201e6f66814fd4da54e1407b}{seg7}}}]{display,  }\item[{uint8\+\_\+t}]{digit }\end{DoxyParamCaption})}
+
+
+
+Escreve um dígito no display. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em display} & Componente de display a ser escrito \\
+\hline
+{\em digit} & Digito que deve ser escrito \\
+\hline
+\end{DoxyParams}

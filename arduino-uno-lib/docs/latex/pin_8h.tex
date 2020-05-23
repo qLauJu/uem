@@ -1,0 +1,113 @@
+\hypertarget{pin_8h}{}\section{include/pin.h File Reference}
+\label{pin_8h}\index{include/pin.\+h@{include/pin.\+h}}
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{pin_8h_a1bb283bd7893b9855e2f23013891fc82}{I\+N\+P\+UT}}~0x0
+\item 
+\#define \mbox{\hyperlink{pin_8h_a61a3c9a18380aafb6e430e79bf596557}{O\+U\+T\+P\+UT}}~0x1
+\item 
+\#define \mbox{\hyperlink{pin_8h_aca4f67c0077925f24ea1f6b26e313271}{P\+U\+L\+L\+\_\+\+UP}}~0x2
+\item 
+\#define \mbox{\hyperlink{pin_8h_ab811d8c6ff3a505312d3276590444289}{L\+OW}}~0x0
+\item 
+\#define \mbox{\hyperlink{pin_8h_a5bb885982ff66a2e0a0a45a8ee9c35e2}{H\+I\+GH}}~0x1
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{pin_8h_aa6ddb0ae5554ea2f1b9254e1985bacc4}{Pin\+Mode}} (uint8\+\_\+t pin, uint8\+\_\+t mode)
+\begin{DoxyCompactList}\small\item\em Define um pino como entrada, saída ou pull up. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{pin_8h_ab02e820a1ed8c8e0f68629b262a1203f}{Digital\+Write}} (uint8\+\_\+t pin, uint8\+\_\+t value)
+\begin{DoxyCompactList}\small\item\em Escreve o valor lógico 1 ou 0 no pino especificado. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{pin_8h_a379860e4c42182ae5824be8cd814ba9e}{Digital\+Read}} (uint8\+\_\+t pin)
+\begin{DoxyCompactList}\small\item\em Lê o valor lógico do pino. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{pin_8h_a5bb885982ff66a2e0a0a45a8ee9c35e2}\label{pin_8h_a5bb885982ff66a2e0a0a45a8ee9c35e2}} 
+\index{pin.\+h@{pin.\+h}!H\+I\+GH@{H\+I\+GH}}
+\index{H\+I\+GH@{H\+I\+GH}!pin.\+h@{pin.\+h}}
+\subsubsection{\texorpdfstring{H\+I\+GH}{HIGH}}
+{\footnotesize\ttfamily \#define H\+I\+GH~0x1}
+
+\mbox{\Hypertarget{pin_8h_a1bb283bd7893b9855e2f23013891fc82}\label{pin_8h_a1bb283bd7893b9855e2f23013891fc82}} 
+\index{pin.\+h@{pin.\+h}!I\+N\+P\+UT@{I\+N\+P\+UT}}
+\index{I\+N\+P\+UT@{I\+N\+P\+UT}!pin.\+h@{pin.\+h}}
+\subsubsection{\texorpdfstring{I\+N\+P\+UT}{INPUT}}
+{\footnotesize\ttfamily \#define I\+N\+P\+UT~0x0}
+
+\mbox{\Hypertarget{pin_8h_ab811d8c6ff3a505312d3276590444289}\label{pin_8h_ab811d8c6ff3a505312d3276590444289}} 
+\index{pin.\+h@{pin.\+h}!L\+OW@{L\+OW}}
+\index{L\+OW@{L\+OW}!pin.\+h@{pin.\+h}}
+\subsubsection{\texorpdfstring{L\+OW}{LOW}}
+{\footnotesize\ttfamily \#define L\+OW~0x0}
+
+\mbox{\Hypertarget{pin_8h_a61a3c9a18380aafb6e430e79bf596557}\label{pin_8h_a61a3c9a18380aafb6e430e79bf596557}} 
+\index{pin.\+h@{pin.\+h}!O\+U\+T\+P\+UT@{O\+U\+T\+P\+UT}}
+\index{O\+U\+T\+P\+UT@{O\+U\+T\+P\+UT}!pin.\+h@{pin.\+h}}
+\subsubsection{\texorpdfstring{O\+U\+T\+P\+UT}{OUTPUT}}
+{\footnotesize\ttfamily \#define O\+U\+T\+P\+UT~0x1}
+
+\mbox{\Hypertarget{pin_8h_aca4f67c0077925f24ea1f6b26e313271}\label{pin_8h_aca4f67c0077925f24ea1f6b26e313271}} 
+\index{pin.\+h@{pin.\+h}!P\+U\+L\+L\+\_\+\+UP@{P\+U\+L\+L\+\_\+\+UP}}
+\index{P\+U\+L\+L\+\_\+\+UP@{P\+U\+L\+L\+\_\+\+UP}!pin.\+h@{pin.\+h}}
+\subsubsection{\texorpdfstring{P\+U\+L\+L\+\_\+\+UP}{PULL\_UP}}
+{\footnotesize\ttfamily \#define P\+U\+L\+L\+\_\+\+UP~0x2}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{pin_8h_a379860e4c42182ae5824be8cd814ba9e}\label{pin_8h_a379860e4c42182ae5824be8cd814ba9e}} 
+\index{pin.\+h@{pin.\+h}!Digital\+Read@{Digital\+Read}}
+\index{Digital\+Read@{Digital\+Read}!pin.\+h@{pin.\+h}}
+\subsubsection{\texorpdfstring{Digital\+Read()}{DigitalRead()}}
+{\footnotesize\ttfamily uint8\+\_\+t Digital\+Read (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{pin }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Lê o valor lógico do pino. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pin} & Número do pino a ser lido. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint8\+\_\+t Retorna o valor lógico lido, podendo ser H\+I\+GH ou L\+OW. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{pin_8h_ab02e820a1ed8c8e0f68629b262a1203f}\label{pin_8h_ab02e820a1ed8c8e0f68629b262a1203f}} 
+\index{pin.\+h@{pin.\+h}!Digital\+Write@{Digital\+Write}}
+\index{Digital\+Write@{Digital\+Write}!pin.\+h@{pin.\+h}}
+\subsubsection{\texorpdfstring{Digital\+Write()}{DigitalWrite()}}
+{\footnotesize\ttfamily void Digital\+Write (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{pin,  }\item[{uint8\+\_\+t}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Escreve o valor lógico 1 ou 0 no pino especificado. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pin} & Número do pino a ser escrito. \\
+\hline
+{\em value} & Valor lógico a ser escrito no pino, podendo ser H\+I\+GH ou L\+OW. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{pin_8h_aa6ddb0ae5554ea2f1b9254e1985bacc4}\label{pin_8h_aa6ddb0ae5554ea2f1b9254e1985bacc4}} 
+\index{pin.\+h@{pin.\+h}!Pin\+Mode@{Pin\+Mode}}
+\index{Pin\+Mode@{Pin\+Mode}!pin.\+h@{pin.\+h}}
+\subsubsection{\texorpdfstring{Pin\+Mode()}{PinMode()}}
+{\footnotesize\ttfamily void Pin\+Mode (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{pin,  }\item[{uint8\+\_\+t}]{mode }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Define um pino como entrada, saída ou pull up. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pin} & Número do pino a ser configurado. \\
+\hline
+{\em mode} & Modo de configuração do pino, podendo ser I\+N\+P\+UT, O\+U\+T\+P\+UT ou P\+U\+L\+L\+\_\+\+UP \\
+\hline
+\end{DoxyParams}

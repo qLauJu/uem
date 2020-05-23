@@ -1,0 +1,278 @@
+\begin{theindex}
+
+  \item {\+\_\+\+C\+O\+M0}
+    \subitem {analog.\+c}, \hyperpage{13}
+  \item {\+\_\+\+C\+O\+M1}
+    \subitem {analog.\+c}, \hyperpage{13}
+  \item {\+\_\+\+D\+DR}
+    \subitem {pin.\+c}, \hyperpage{35}
+  \item {\+\_\+\+O\+CR}
+    \subitem {analog.\+c}, \hyperpage{13}
+  \item {\+\_\+\+P\+IN}
+    \subitem {pin.\+c}, \hyperpage{35}
+  \item {\+\_\+\+P\+O\+RT}
+    \subitem {pin.\+c}, \hyperpage{35}
+  \item {\+\_\+\+T\+C\+CA}
+    \subitem {analog.\+c}, \hyperpage{13}
+  \item {\+\_\+\+T\+C\+CB}
+    \subitem {analog.\+c}, \hyperpage{13}
+  \item {\+\_\+delay.\+s}, \hyperpage{11}
+
+  \indexspace
+
+  \item {a}
+    \subitem {tuple2}, \hyperpage{10}
+  \item {analog.\+c}, \hyperpage{11}
+    \subitem {\+\_\+\+C\+O\+M0}, \hyperpage{13}
+    \subitem {\+\_\+\+C\+O\+M1}, \hyperpage{13}
+    \subitem {\+\_\+\+O\+CR}, \hyperpage{13}
+    \subitem {\+\_\+\+T\+C\+CA}, \hyperpage{13}
+    \subitem {\+\_\+\+T\+C\+CB}, \hyperpage{13}
+    \subitem {Analog\+Write}, \hyperpage{12}
+    \subitem {F\+\_\+\+C\+PU}, \hyperpage{11}
+    \subitem {get\+\_\+prescaler}, \hyperpage{12}
+    \subitem {get\+\_\+prescaler2}, \hyperpage{12}
+    \subitem {N\+U\+LL}, \hyperpage{12}
+    \subitem {sqr\+\_\+wave}, \hyperpage{12}
+  \item {analog.\+h}
+    \subitem {Analog\+Write}, \hyperpage{18}
+  \item {Analog\+Write}
+    \subitem {analog.\+c}, \hyperpage{12}
+    \subitem {analog.\+h}, \hyperpage{18}
+
+  \indexspace
+
+  \item {b}
+    \subitem {tuple2}, \hyperpage{10}
+  \item {B\+U\+T\+T\+O\+N\+\_\+\+O\+N\+C\+L\+I\+CK}
+    \subitem {button.\+h}, \hyperpage{20}
+  \item {B\+U\+T\+T\+O\+N\+\_\+\+O\+N\+R\+E\+L\+E\+A\+SE}
+    \subitem {button.\+h}, \hyperpage{20}
+  \item {bit.\+h}
+    \subitem {cbi}, \hyperpage{18}
+    \subitem {is\+\_\+bit\+\_\+set}, \hyperpage{19}
+    \subitem {sbi}, \hyperpage{19}
+  \item {button.\+c}, \hyperpage{13}
+    \subitem {Button\+\_\+init}, \hyperpage{14}
+    \subitem {Button\+\_\+ispressed}, \hyperpage{14}
+    \subitem {Button\+\_\+onclick}, \hyperpage{14}
+    \subitem {Button\+\_\+onrelease}, \hyperpage{15}
+  \item {button.\+h}
+    \subitem {B\+U\+T\+T\+O\+N\+\_\+\+O\+N\+C\+L\+I\+CK}, 
+		\hyperpage{20}
+    \subitem {B\+U\+T\+T\+O\+N\+\_\+\+O\+N\+R\+E\+L\+E\+A\+SE}, 
+		\hyperpage{20}
+    \subitem {Button\+\_\+init}, \hyperpage{20}
+    \subitem {Button\+\_\+ispressed}, \hyperpage{21}
+    \subitem {Button\+\_\+onclick}, \hyperpage{21}
+    \subitem {Button\+\_\+onrelease}, \hyperpage{21}
+  \item {Button\+\_\+init}
+    \subitem {button.\+c}, \hyperpage{14}
+    \subitem {button.\+h}, \hyperpage{20}
+  \item {Button\+\_\+ispressed}
+    \subitem {button.\+c}, \hyperpage{14}
+    \subitem {button.\+h}, \hyperpage{21}
+  \item {Button\+\_\+onclick}
+    \subitem {button.\+c}, \hyperpage{14}
+    \subitem {button.\+h}, \hyperpage{21}
+  \item {Button\+\_\+onrelease}
+    \subitem {button.\+c}, \hyperpage{15}
+    \subitem {button.\+h}, \hyperpage{21}
+
+  \indexspace
+
+  \item {cbi}
+    \subitem {bit.\+h}, \hyperpage{18}
+
+  \indexspace
+
+  \item {delay.\+c}, \hyperpage{15}
+    \subitem {delay\+\_\+1ms}, \hyperpage{16}
+    \subitem {delay\+\_\+1us}, \hyperpage{16}
+    \subitem {delay\+\_\+ms}, \hyperpage{16}
+    \subitem {delay\+\_\+us}, \hyperpage{16}
+  \item {delay.\+h}
+    \subitem {delay\+\_\+ms}, \hyperpage{22}
+    \subitem {delay\+\_\+us}, \hyperpage{22}
+  \item {delay\+\_\+1ms}
+    \subitem {delay.\+c}, \hyperpage{16}
+  \item {delay\+\_\+1us}
+    \subitem {delay.\+c}, \hyperpage{16}
+  \item {delay\+\_\+ms}
+    \subitem {delay.\+c}, \hyperpage{16}
+    \subitem {delay.\+h}, \hyperpage{22}
+  \item {delay\+\_\+us}
+    \subitem {delay.\+c}, \hyperpage{16}
+    \subitem {delay.\+h}, \hyperpage{22}
+  \item {Digital\+Read}
+    \subitem {pin.\+c}, \hyperpage{34}
+    \subitem {pin.\+h}, \hyperpage{27}
+  \item {Digital\+Write}
+    \subitem {pin.\+c}, \hyperpage{34}
+    \subitem {pin.\+h}, \hyperpage{28}
+  \item {dst\+\_\+sensor.\+c}, \hyperpage{17}
+    \subitem {Dst\+Sensor\+\_\+init}, \hyperpage{17}
+    \subitem {Dst\+Sensor\+\_\+read}, \hyperpage{17}
+  \item {dst\+\_\+sensor.\+h}
+    \subitem {Dst\+Sensor\+\_\+init}, \hyperpage{23}
+    \subitem {Dst\+Sensor\+\_\+read}, \hyperpage{23}
+  \item {Dst\+Sensor}, \hyperpage{9}
+    \subitem {echo}, \hyperpage{9}
+    \subitem {trigger}, \hyperpage{9}
+  \item {Dst\+Sensor\+\_\+init}
+    \subitem {dst\+\_\+sensor.\+c}, \hyperpage{17}
+    \subitem {dst\+\_\+sensor.\+h}, \hyperpage{23}
+  \item {Dst\+Sensor\+\_\+read}
+    \subitem {dst\+\_\+sensor.\+c}, \hyperpage{17}
+    \subitem {dst\+\_\+sensor.\+h}, \hyperpage{23}
+
+  \indexspace
+
+  \item {echo}
+    \subitem {Dst\+Sensor}, \hyperpage{9}
+
+  \indexspace
+
+  \item {F\+\_\+\+C\+PU}
+    \subitem {analog.\+c}, \hyperpage{11}
+
+  \indexspace
+
+  \item {get\+\_\+prescaler}
+    \subitem {analog.\+c}, \hyperpage{12}
+  \item {get\+\_\+prescaler2}
+    \subitem {analog.\+c}, \hyperpage{12}
+
+  \indexspace
+
+  \item {H\+I\+GH}
+    \subitem {pin.\+h}, \hyperpage{26}
+
+  \indexspace
+
+  \item {I\+N\+P\+UT}
+    \subitem {pin.\+h}, \hyperpage{27}
+  \item {include/analog.\+h}, \hyperpage{18}
+  \item {include/bit.\+h}, \hyperpage{18}
+  \item {include/button.\+h}, \hyperpage{19}
+  \item {include/delay.\+h}, \hyperpage{22}
+  \item {include/dst\+\_\+sensor.\+h}, \hyperpage{23}
+  \item {include/led.\+h}, \hyperpage{24}
+  \item {include/pin.\+h}, \hyperpage{26}
+  \item {include/seg7.\+h}, \hyperpage{28}
+  \item {include/sqr\+\_\+wave.\+h}, \hyperpage{31}
+  \item {is\+\_\+bit\+\_\+set}
+    \subitem {bit.\+h}, \hyperpage{19}
+
+  \indexspace
+
+  \item {L\+OW}
+    \subitem {pin.\+h}, \hyperpage{27}
+  \item {led.\+c}, \hyperpage{31}
+    \subitem {Led\+\_\+blink}, \hyperpage{32}
+    \subitem {Led\+\_\+init}, \hyperpage{32}
+    \subitem {Led\+\_\+set}, \hyperpage{32}
+    \subitem {Led\+\_\+swap}, \hyperpage{33}
+  \item {led.\+h}
+    \subitem {Led\+\_\+blink}, \hyperpage{25}
+    \subitem {Led\+\_\+init}, \hyperpage{25}
+    \subitem {Led\+\_\+set}, \hyperpage{25}
+    \subitem {Led\+\_\+swap}, \hyperpage{26}
+    \subitem {O\+FF}, \hyperpage{24}
+    \subitem {ON}, \hyperpage{24}
+  \item {Led\+\_\+blink}
+    \subitem {led.\+c}, \hyperpage{32}
+    \subitem {led.\+h}, \hyperpage{25}
+  \item {Led\+\_\+init}
+    \subitem {led.\+c}, \hyperpage{32}
+    \subitem {led.\+h}, \hyperpage{25}
+  \item {Led\+\_\+set}
+    \subitem {led.\+c}, \hyperpage{32}
+    \subitem {led.\+h}, \hyperpage{25}
+  \item {Led\+\_\+swap}
+    \subitem {led.\+c}, \hyperpage{33}
+    \subitem {led.\+h}, \hyperpage{26}
+
+  \indexspace
+
+  \item {main}
+    \subitem {main.\+c}, \hyperpage{33}
+  \item {main.\+c}, \hyperpage{33}
+    \subitem {main}, \hyperpage{33}
+
+  \indexspace
+
+  \item {N\+U\+LL}
+    \subitem {analog.\+c}, \hyperpage{12}
+
+  \indexspace
+
+  \item {O\+FF}
+    \subitem {led.\+h}, \hyperpage{24}
+  \item {O\+U\+T\+P\+UT}
+    \subitem {pin.\+h}, \hyperpage{27}
+  \item {ON}
+    \subitem {led.\+h}, \hyperpage{24}
+
+  \indexspace
+
+  \item {P\+U\+L\+L\+\_\+\+UP}
+    \subitem {pin.\+h}, \hyperpage{27}
+  \item {pin.\+c}, \hyperpage{34}
+    \subitem {\+\_\+\+D\+DR}, \hyperpage{35}
+    \subitem {\+\_\+\+P\+IN}, \hyperpage{35}
+    \subitem {\+\_\+\+P\+O\+RT}, \hyperpage{35}
+    \subitem {Digital\+Read}, \hyperpage{34}
+    \subitem {Digital\+Write}, \hyperpage{34}
+    \subitem {Pin\+Mode}, \hyperpage{35}
+  \item {pin.\+h}
+    \subitem {Digital\+Read}, \hyperpage{27}
+    \subitem {Digital\+Write}, \hyperpage{28}
+    \subitem {H\+I\+GH}, \hyperpage{26}
+    \subitem {I\+N\+P\+UT}, \hyperpage{27}
+    \subitem {L\+OW}, \hyperpage{27}
+    \subitem {O\+U\+T\+P\+UT}, \hyperpage{27}
+    \subitem {P\+U\+L\+L\+\_\+\+UP}, \hyperpage{27}
+    \subitem {Pin\+Mode}, \hyperpage{28}
+  \item {Pin\+Mode}
+    \subitem {pin.\+c}, \hyperpage{35}
+    \subitem {pin.\+h}, \hyperpage{28}
+
+  \indexspace
+
+  \item {R\+E\+A\+D\+M\+E.\+md}, \hyperpage{35}
+
+  \indexspace
+
+  \item {sbi}
+    \subitem {bit.\+h}, \hyperpage{19}
+  \item {seg7}
+    \subitem {seg7.\+h}, \hyperpage{29}
+  \item {seg7.\+c}, \hyperpage{35}
+    \subitem {Seg7\+\_\+init}, \hyperpage{36}
+    \subitem {Seg7\+\_\+putdigit}, \hyperpage{38}
+  \item {seg7.\+h}
+    \subitem {seg7}, \hyperpage{29}
+    \subitem {Seg7\+\_\+init}, \hyperpage{29}
+    \subitem {Seg7\+\_\+putdigit}, \hyperpage{29}
+  \item {Seg7\+\_\+init}
+    \subitem {seg7.\+c}, \hyperpage{36}
+    \subitem {seg7.\+h}, \hyperpage{29}
+  \item {Seg7\+\_\+putdigit}
+    \subitem {seg7.\+c}, \hyperpage{38}
+    \subitem {seg7.\+h}, \hyperpage{29}
+  \item {sqr\+\_\+wave}
+    \subitem {analog.\+c}, \hyperpage{12}
+    \subitem {sqr\+\_\+wave.\+h}, \hyperpage{31}
+  \item {sqr\+\_\+wave.\+h}
+    \subitem {sqr\+\_\+wave}, \hyperpage{31}
+
+  \indexspace
+
+  \item {trigger}
+    \subitem {Dst\+Sensor}, \hyperpage{9}
+  \item {tuple2}, \hyperpage{10}
+    \subitem {a}, \hyperpage{10}
+    \subitem {b}, \hyperpage{10}
+
+\end{theindex}

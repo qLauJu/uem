@@ -1,0 +1,177 @@
+\indexentry{Dst\+Sensor@{Dst\+Sensor}|hyperpage}{9}
+\indexentry{Dst\+Sensor@{Dst\+Sensor}!echo@{echo}|hyperpage}{9}
+\indexentry{echo@{echo}!Dst\+Sensor@{Dst\+Sensor}|hyperpage}{9}
+\indexentry{Dst\+Sensor@{Dst\+Sensor}!trigger@{trigger}|hyperpage}{9}
+\indexentry{trigger@{trigger}!Dst\+Sensor@{Dst\+Sensor}|hyperpage}{9}
+\indexentry{tuple2@{tuple2}|hyperpage}{10}
+\indexentry{tuple2@{tuple2}!a@{a}|hyperpage}{10}
+\indexentry{a@{a}!tuple2@{tuple2}|hyperpage}{10}
+\indexentry{tuple2@{tuple2}!b@{b}|hyperpage}{10}
+\indexentry{b@{b}!tuple2@{tuple2}|hyperpage}{10}
+\indexentry{\+\_\+delay.\+s@{\+\_\+delay.\+s}|hyperpage}{11}
+\indexentry{analog.\+c@{analog.\+c}|hyperpage}{11}
+\indexentry{analog.\+c@{analog.\+c}!F\+\_\+\+C\+PU@{F\+\_\+\+C\+PU}|hyperpage}{11}
+\indexentry{F\+\_\+\+C\+PU@{F\+\_\+\+C\+PU}!analog.\+c@{analog.\+c}|hyperpage}{11}
+\indexentry{analog.\+c@{analog.\+c}!N\+U\+LL@{N\+U\+LL}|hyperpage}{12}
+\indexentry{N\+U\+LL@{N\+U\+LL}!analog.\+c@{analog.\+c}|hyperpage}{12}
+\indexentry{analog.\+c@{analog.\+c}!Analog\+Write@{Analog\+Write}|hyperpage}{12}
+\indexentry{Analog\+Write@{Analog\+Write}!analog.\+c@{analog.\+c}|hyperpage}{12}
+\indexentry{analog.\+c@{analog.\+c}!get\+\_\+prescaler@{get\+\_\+prescaler}|hyperpage}{12}
+\indexentry{get\+\_\+prescaler@{get\+\_\+prescaler}!analog.\+c@{analog.\+c}|hyperpage}{12}
+\indexentry{analog.\+c@{analog.\+c}!get\+\_\+prescaler2@{get\+\_\+prescaler2}|hyperpage}{12}
+\indexentry{get\+\_\+prescaler2@{get\+\_\+prescaler2}!analog.\+c@{analog.\+c}|hyperpage}{12}
+\indexentry{analog.\+c@{analog.\+c}!sqr\+\_\+wave@{sqr\+\_\+wave}|hyperpage}{12}
+\indexentry{sqr\+\_\+wave@{sqr\+\_\+wave}!analog.\+c@{analog.\+c}|hyperpage}{12}
+\indexentry{analog.\+c@{analog.\+c}!\+\_\+\+C\+O\+M0@{\+\_\+\+C\+O\+M0}|hyperpage}{13}
+\indexentry{\+\_\+\+C\+O\+M0@{\+\_\+\+C\+O\+M0}!analog.\+c@{analog.\+c}|hyperpage}{13}
+\indexentry{analog.\+c@{analog.\+c}!\+\_\+\+C\+O\+M1@{\+\_\+\+C\+O\+M1}|hyperpage}{13}
+\indexentry{\+\_\+\+C\+O\+M1@{\+\_\+\+C\+O\+M1}!analog.\+c@{analog.\+c}|hyperpage}{13}
+\indexentry{analog.\+c@{analog.\+c}!\+\_\+\+O\+CR@{\+\_\+\+O\+CR}|hyperpage}{13}
+\indexentry{\+\_\+\+O\+CR@{\+\_\+\+O\+CR}!analog.\+c@{analog.\+c}|hyperpage}{13}
+\indexentry{analog.\+c@{analog.\+c}!\+\_\+\+T\+C\+CA@{\+\_\+\+T\+C\+CA}|hyperpage}{13}
+\indexentry{\+\_\+\+T\+C\+CA@{\+\_\+\+T\+C\+CA}!analog.\+c@{analog.\+c}|hyperpage}{13}
+\indexentry{analog.\+c@{analog.\+c}!\+\_\+\+T\+C\+CB@{\+\_\+\+T\+C\+CB}|hyperpage}{13}
+\indexentry{\+\_\+\+T\+C\+CB@{\+\_\+\+T\+C\+CB}!analog.\+c@{analog.\+c}|hyperpage}{13}
+\indexentry{button.\+c@{button.\+c}|hyperpage}{13}
+\indexentry{button.\+c@{button.\+c}!Button\+\_\+init@{Button\+\_\+init}|hyperpage}{14}
+\indexentry{Button\+\_\+init@{Button\+\_\+init}!button.\+c@{button.\+c}|hyperpage}{14}
+\indexentry{button.\+c@{button.\+c}!Button\+\_\+ispressed@{Button\+\_\+ispressed}|hyperpage}{14}
+\indexentry{Button\+\_\+ispressed@{Button\+\_\+ispressed}!button.\+c@{button.\+c}|hyperpage}{14}
+\indexentry{button.\+c@{button.\+c}!Button\+\_\+onclick@{Button\+\_\+onclick}|hyperpage}{14}
+\indexentry{Button\+\_\+onclick@{Button\+\_\+onclick}!button.\+c@{button.\+c}|hyperpage}{14}
+\indexentry{button.\+c@{button.\+c}!Button\+\_\+onrelease@{Button\+\_\+onrelease}|hyperpage}{15}
+\indexentry{Button\+\_\+onrelease@{Button\+\_\+onrelease}!button.\+c@{button.\+c}|hyperpage}{15}
+\indexentry{delay.\+c@{delay.\+c}|hyperpage}{15}
+\indexentry{delay.\+c@{delay.\+c}!delay\+\_\+1ms@{delay\+\_\+1ms}|hyperpage}{16}
+\indexentry{delay\+\_\+1ms@{delay\+\_\+1ms}!delay.\+c@{delay.\+c}|hyperpage}{16}
+\indexentry{delay.\+c@{delay.\+c}!delay\+\_\+1us@{delay\+\_\+1us}|hyperpage}{16}
+\indexentry{delay\+\_\+1us@{delay\+\_\+1us}!delay.\+c@{delay.\+c}|hyperpage}{16}
+\indexentry{delay.\+c@{delay.\+c}!delay\+\_\+ms@{delay\+\_\+ms}|hyperpage}{16}
+\indexentry{delay\+\_\+ms@{delay\+\_\+ms}!delay.\+c@{delay.\+c}|hyperpage}{16}
+\indexentry{delay.\+c@{delay.\+c}!delay\+\_\+us@{delay\+\_\+us}|hyperpage}{16}
+\indexentry{delay\+\_\+us@{delay\+\_\+us}!delay.\+c@{delay.\+c}|hyperpage}{16}
+\indexentry{dst\+\_\+sensor.\+c@{dst\+\_\+sensor.\+c}|hyperpage}{17}
+\indexentry{dst\+\_\+sensor.\+c@{dst\+\_\+sensor.\+c}!Dst\+Sensor\+\_\+init@{Dst\+Sensor\+\_\+init}|hyperpage}{17}
+\indexentry{Dst\+Sensor\+\_\+init@{Dst\+Sensor\+\_\+init}!dst\+\_\+sensor.\+c@{dst\+\_\+sensor.\+c}|hyperpage}{17}
+\indexentry{dst\+\_\+sensor.\+c@{dst\+\_\+sensor.\+c}!Dst\+Sensor\+\_\+read@{Dst\+Sensor\+\_\+read}|hyperpage}{17}
+\indexentry{Dst\+Sensor\+\_\+read@{Dst\+Sensor\+\_\+read}!dst\+\_\+sensor.\+c@{dst\+\_\+sensor.\+c}|hyperpage}{17}
+\indexentry{include/analog.\+h@{include/analog.\+h}|hyperpage}{18}
+\indexentry{analog.\+h@{analog.\+h}!Analog\+Write@{Analog\+Write}|hyperpage}{18}
+\indexentry{Analog\+Write@{Analog\+Write}!analog.\+h@{analog.\+h}|hyperpage}{18}
+\indexentry{include/bit.\+h@{include/bit.\+h}|hyperpage}{18}
+\indexentry{bit.\+h@{bit.\+h}!cbi@{cbi}|hyperpage}{18}
+\indexentry{cbi@{cbi}!bit.\+h@{bit.\+h}|hyperpage}{18}
+\indexentry{bit.\+h@{bit.\+h}!is\+\_\+bit\+\_\+set@{is\+\_\+bit\+\_\+set}|hyperpage}{19}
+\indexentry{is\+\_\+bit\+\_\+set@{is\+\_\+bit\+\_\+set}!bit.\+h@{bit.\+h}|hyperpage}{19}
+\indexentry{bit.\+h@{bit.\+h}!sbi@{sbi}|hyperpage}{19}
+\indexentry{sbi@{sbi}!bit.\+h@{bit.\+h}|hyperpage}{19}
+\indexentry{include/button.\+h@{include/button.\+h}|hyperpage}{19}
+\indexentry{button.\+h@{button.\+h}!B\+U\+T\+T\+O\+N\+\_\+\+O\+N\+C\+L\+I\+CK@{B\+U\+T\+T\+O\+N\+\_\+\+O\+N\+C\+L\+I\+CK}|hyperpage}{20}
+\indexentry{B\+U\+T\+T\+O\+N\+\_\+\+O\+N\+C\+L\+I\+CK@{B\+U\+T\+T\+O\+N\+\_\+\+O\+N\+C\+L\+I\+CK}!button.\+h@{button.\+h}|hyperpage}{20}
+\indexentry{button.\+h@{button.\+h}!B\+U\+T\+T\+O\+N\+\_\+\+O\+N\+R\+E\+L\+E\+A\+SE@{B\+U\+T\+T\+O\+N\+\_\+\+O\+N\+R\+E\+L\+E\+A\+SE}|hyperpage}{20}
+\indexentry{B\+U\+T\+T\+O\+N\+\_\+\+O\+N\+R\+E\+L\+E\+A\+SE@{B\+U\+T\+T\+O\+N\+\_\+\+O\+N\+R\+E\+L\+E\+A\+SE}!button.\+h@{button.\+h}|hyperpage}{20}
+\indexentry{button.\+h@{button.\+h}!Button\+\_\+init@{Button\+\_\+init}|hyperpage}{20}
+\indexentry{Button\+\_\+init@{Button\+\_\+init}!button.\+h@{button.\+h}|hyperpage}{20}
+\indexentry{button.\+h@{button.\+h}!Button\+\_\+ispressed@{Button\+\_\+ispressed}|hyperpage}{21}
+\indexentry{Button\+\_\+ispressed@{Button\+\_\+ispressed}!button.\+h@{button.\+h}|hyperpage}{21}
+\indexentry{button.\+h@{button.\+h}!Button\+\_\+onclick@{Button\+\_\+onclick}|hyperpage}{21}
+\indexentry{Button\+\_\+onclick@{Button\+\_\+onclick}!button.\+h@{button.\+h}|hyperpage}{21}
+\indexentry{button.\+h@{button.\+h}!Button\+\_\+onrelease@{Button\+\_\+onrelease}|hyperpage}{21}
+\indexentry{Button\+\_\+onrelease@{Button\+\_\+onrelease}!button.\+h@{button.\+h}|hyperpage}{21}
+\indexentry{include/delay.\+h@{include/delay.\+h}|hyperpage}{22}
+\indexentry{delay.\+h@{delay.\+h}!delay\+\_\+ms@{delay\+\_\+ms}|hyperpage}{22}
+\indexentry{delay\+\_\+ms@{delay\+\_\+ms}!delay.\+h@{delay.\+h}|hyperpage}{22}
+\indexentry{delay.\+h@{delay.\+h}!delay\+\_\+us@{delay\+\_\+us}|hyperpage}{22}
+\indexentry{delay\+\_\+us@{delay\+\_\+us}!delay.\+h@{delay.\+h}|hyperpage}{22}
+\indexentry{include/dst\+\_\+sensor.\+h@{include/dst\+\_\+sensor.\+h}|hyperpage}{23}
+\indexentry{dst\+\_\+sensor.\+h@{dst\+\_\+sensor.\+h}!Dst\+Sensor\+\_\+init@{Dst\+Sensor\+\_\+init}|hyperpage}{23}
+\indexentry{Dst\+Sensor\+\_\+init@{Dst\+Sensor\+\_\+init}!dst\+\_\+sensor.\+h@{dst\+\_\+sensor.\+h}|hyperpage}{23}
+\indexentry{dst\+\_\+sensor.\+h@{dst\+\_\+sensor.\+h}!Dst\+Sensor\+\_\+read@{Dst\+Sensor\+\_\+read}|hyperpage}{23}
+\indexentry{Dst\+Sensor\+\_\+read@{Dst\+Sensor\+\_\+read}!dst\+\_\+sensor.\+h@{dst\+\_\+sensor.\+h}|hyperpage}{23}
+\indexentry{include/led.\+h@{include/led.\+h}|hyperpage}{24}
+\indexentry{led.\+h@{led.\+h}!O\+FF@{O\+FF}|hyperpage}{24}
+\indexentry{O\+FF@{O\+FF}!led.\+h@{led.\+h}|hyperpage}{24}
+\indexentry{led.\+h@{led.\+h}!ON@{ON}|hyperpage}{24}
+\indexentry{ON@{ON}!led.\+h@{led.\+h}|hyperpage}{24}
+\indexentry{led.\+h@{led.\+h}!Led\+\_\+blink@{Led\+\_\+blink}|hyperpage}{25}
+\indexentry{Led\+\_\+blink@{Led\+\_\+blink}!led.\+h@{led.\+h}|hyperpage}{25}
+\indexentry{led.\+h@{led.\+h}!Led\+\_\+init@{Led\+\_\+init}|hyperpage}{25}
+\indexentry{Led\+\_\+init@{Led\+\_\+init}!led.\+h@{led.\+h}|hyperpage}{25}
+\indexentry{led.\+h@{led.\+h}!Led\+\_\+set@{Led\+\_\+set}|hyperpage}{25}
+\indexentry{Led\+\_\+set@{Led\+\_\+set}!led.\+h@{led.\+h}|hyperpage}{25}
+\indexentry{led.\+h@{led.\+h}!Led\+\_\+swap@{Led\+\_\+swap}|hyperpage}{26}
+\indexentry{Led\+\_\+swap@{Led\+\_\+swap}!led.\+h@{led.\+h}|hyperpage}{26}
+\indexentry{include/pin.\+h@{include/pin.\+h}|hyperpage}{26}
+\indexentry{pin.\+h@{pin.\+h}!H\+I\+GH@{H\+I\+GH}|hyperpage}{26}
+\indexentry{H\+I\+GH@{H\+I\+GH}!pin.\+h@{pin.\+h}|hyperpage}{26}
+\indexentry{pin.\+h@{pin.\+h}!I\+N\+P\+UT@{I\+N\+P\+UT}|hyperpage}{27}
+\indexentry{I\+N\+P\+UT@{I\+N\+P\+UT}!pin.\+h@{pin.\+h}|hyperpage}{27}
+\indexentry{pin.\+h@{pin.\+h}!L\+OW@{L\+OW}|hyperpage}{27}
+\indexentry{L\+OW@{L\+OW}!pin.\+h@{pin.\+h}|hyperpage}{27}
+\indexentry{pin.\+h@{pin.\+h}!O\+U\+T\+P\+UT@{O\+U\+T\+P\+UT}|hyperpage}{27}
+\indexentry{O\+U\+T\+P\+UT@{O\+U\+T\+P\+UT}!pin.\+h@{pin.\+h}|hyperpage}{27}
+\indexentry{pin.\+h@{pin.\+h}!P\+U\+L\+L\+\_\+\+UP@{P\+U\+L\+L\+\_\+\+UP}|hyperpage}{27}
+\indexentry{P\+U\+L\+L\+\_\+\+UP@{P\+U\+L\+L\+\_\+\+UP}!pin.\+h@{pin.\+h}|hyperpage}{27}
+\indexentry{pin.\+h@{pin.\+h}!Digital\+Read@{Digital\+Read}|hyperpage}{27}
+\indexentry{Digital\+Read@{Digital\+Read}!pin.\+h@{pin.\+h}|hyperpage}{27}
+\indexentry{pin.\+h@{pin.\+h}!Digital\+Write@{Digital\+Write}|hyperpage}{28}
+\indexentry{Digital\+Write@{Digital\+Write}!pin.\+h@{pin.\+h}|hyperpage}{28}
+\indexentry{pin.\+h@{pin.\+h}!Pin\+Mode@{Pin\+Mode}|hyperpage}{28}
+\indexentry{Pin\+Mode@{Pin\+Mode}!pin.\+h@{pin.\+h}|hyperpage}{28}
+\indexentry{include/seg7.\+h@{include/seg7.\+h}|hyperpage}{28}
+\indexentry{seg7.\+h@{seg7.\+h}!seg7@{seg7}|hyperpage}{29}
+\indexentry{seg7@{seg7}!seg7.\+h@{seg7.\+h}|hyperpage}{29}
+\indexentry{seg7.\+h@{seg7.\+h}!Seg7\+\_\+init@{Seg7\+\_\+init}|hyperpage}{29}
+\indexentry{Seg7\+\_\+init@{Seg7\+\_\+init}!seg7.\+h@{seg7.\+h}|hyperpage}{29}
+\indexentry{seg7.\+h@{seg7.\+h}!Seg7\+\_\+putdigit@{Seg7\+\_\+putdigit}|hyperpage}{29}
+\indexentry{Seg7\+\_\+putdigit@{Seg7\+\_\+putdigit}!seg7.\+h@{seg7.\+h}|hyperpage}{29}
+\indexentry{include/sqr\+\_\+wave.\+h@{include/sqr\+\_\+wave.\+h}|hyperpage}{31}
+\indexentry{sqr\+\_\+wave.\+h@{sqr\+\_\+wave.\+h}!sqr\+\_\+wave@{sqr\+\_\+wave}|hyperpage}{31}
+\indexentry{sqr\+\_\+wave@{sqr\+\_\+wave}!sqr\+\_\+wave.\+h@{sqr\+\_\+wave.\+h}|hyperpage}{31}
+\indexentry{led.\+c@{led.\+c}|hyperpage}{31}
+\indexentry{led.\+c@{led.\+c}!Led\+\_\+blink@{Led\+\_\+blink}|hyperpage}{32}
+\indexentry{Led\+\_\+blink@{Led\+\_\+blink}!led.\+c@{led.\+c}|hyperpage}{32}
+\indexentry{led.\+c@{led.\+c}!Led\+\_\+init@{Led\+\_\+init}|hyperpage}{32}
+\indexentry{Led\+\_\+init@{Led\+\_\+init}!led.\+c@{led.\+c}|hyperpage}{32}
+\indexentry{led.\+c@{led.\+c}!Led\+\_\+set@{Led\+\_\+set}|hyperpage}{32}
+\indexentry{Led\+\_\+set@{Led\+\_\+set}!led.\+c@{led.\+c}|hyperpage}{32}
+\indexentry{led.\+c@{led.\+c}!Led\+\_\+swap@{Led\+\_\+swap}|hyperpage}{33}
+\indexentry{Led\+\_\+swap@{Led\+\_\+swap}!led.\+c@{led.\+c}|hyperpage}{33}
+\indexentry{main.\+c@{main.\+c}|hyperpage}{33}
+\indexentry{main.\+c@{main.\+c}!main@{main}|hyperpage}{33}
+\indexentry{main@{main}!main.\+c@{main.\+c}|hyperpage}{33}
+\indexentry{pin.\+c@{pin.\+c}|hyperpage}{34}
+\indexentry{pin.\+c@{pin.\+c}!Digital\+Read@{Digital\+Read}|hyperpage}{34}
+\indexentry{Digital\+Read@{Digital\+Read}!pin.\+c@{pin.\+c}|hyperpage}{34}
+\indexentry{pin.\+c@{pin.\+c}!Digital\+Write@{Digital\+Write}|hyperpage}{34}
+\indexentry{Digital\+Write@{Digital\+Write}!pin.\+c@{pin.\+c}|hyperpage}{34}
+\indexentry{pin.\+c@{pin.\+c}!Pin\+Mode@{Pin\+Mode}|hyperpage}{35}
+\indexentry{Pin\+Mode@{Pin\+Mode}!pin.\+c@{pin.\+c}|hyperpage}{35}
+\indexentry{pin.\+c@{pin.\+c}!\+\_\+\+D\+DR@{\+\_\+\+D\+DR}|hyperpage}{35}
+\indexentry{\+\_\+\+D\+DR@{\+\_\+\+D\+DR}!pin.\+c@{pin.\+c}|hyperpage}{35}
+\indexentry{pin.\+c@{pin.\+c}!\+\_\+\+P\+IN@{\+\_\+\+P\+IN}|hyperpage}{35}
+\indexentry{\+\_\+\+P\+IN@{\+\_\+\+P\+IN}!pin.\+c@{pin.\+c}|hyperpage}{35}
+\indexentry{pin.\+c@{pin.\+c}!\+\_\+\+P\+O\+RT@{\+\_\+\+P\+O\+RT}|hyperpage}{35}
+\indexentry{\+\_\+\+P\+O\+RT@{\+\_\+\+P\+O\+RT}!pin.\+c@{pin.\+c}|hyperpage}{35}
+\indexentry{R\+E\+A\+D\+M\+E.\+md@{R\+E\+A\+D\+M\+E.\+md}|hyperpage}{35}
+\indexentry{seg7.\+c@{seg7.\+c}|hyperpage}{35}
+\indexentry{A@{A}!seg7.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}c@{seg7.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}c}|hyperpage}{36}
+\indexentry{seg7.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}c@{seg7.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}c}!A@{A}|hyperpage}{36}
+\indexentry{B@{B}!seg7.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}c@{seg7.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}c}|hyperpage}{36}
+\indexentry{seg7.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}c@{seg7.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}c}!B@{B}|hyperpage}{36}
+\indexentry{C@{C}!seg7.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}c@{seg7.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}c}|hyperpage}{36}
+\indexentry{seg7.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}c@{seg7.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}c}!C@{C}|hyperpage}{36}
+\indexentry{D@{D}!seg7.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}c@{seg7.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}c}|hyperpage}{36}
+\indexentry{seg7.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}c@{seg7.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}c}!D@{D}|hyperpage}{36}
+\indexentry{E@{E}!seg7.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}c@{seg7.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}c}|hyperpage}{36}
+\indexentry{seg7.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}c@{seg7.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}c}!E@{E}|hyperpage}{36}
+\indexentry{F@{F}!seg7.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}c@{seg7.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}c}|hyperpage}{36}
+\indexentry{seg7.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}c@{seg7.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}c}!F@{F}|hyperpage}{36}
+\indexentry{G@{G}!seg7.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}c@{seg7.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}c}|hyperpage}{36}
+\indexentry{seg7.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}c@{seg7.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}c}!G@{G}|hyperpage}{36}
+\indexentry{DP@{DP}!seg7.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}c@{seg7.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}c}|hyperpage}{36}
+\indexentry{seg7.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}c@{seg7.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}c}!DP@{DP}|hyperpage}{36}
+\indexentry{seg7.\+c@{seg7.\+c}!Seg7\+\_\+init@{Seg7\+\_\+init}|hyperpage}{36}
+\indexentry{Seg7\+\_\+init@{Seg7\+\_\+init}!seg7.\+c@{seg7.\+c}|hyperpage}{36}
+\indexentry{seg7.\+c@{seg7.\+c}!Seg7\+\_\+putdigit@{Seg7\+\_\+putdigit}|hyperpage}{38}
+\indexentry{Seg7\+\_\+putdigit@{Seg7\+\_\+putdigit}!seg7.\+c@{seg7.\+c}|hyperpage}{38}

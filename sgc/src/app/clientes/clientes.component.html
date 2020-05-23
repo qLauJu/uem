@@ -1,0 +1,18 @@
+<table class="table is-bordered">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Nome</th>
+      <th>Documento</th>
+      <th>E-mail</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let usuario of usuarios">
+      <th>{{usuario.id}}</th>
+      <td>{{usuario.nome}}</td>
+      <td>{{usuario.documento}}</td>
+      <td>{{usuario.email}}</td>
+    </tr>
+  </tbody>
+</table>

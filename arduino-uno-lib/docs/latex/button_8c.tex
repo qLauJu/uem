@@ -1,0 +1,97 @@
+\hypertarget{button_8c}{}\section{button.\+c File Reference}
+\label{button_8c}\index{button.\+c@{button.\+c}}
+{\ttfamily \#include \char`\"{}button.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stddef.\+h$>$}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{button_8c_a24e8f3e30f36898b496ef95999937b28}{Button\+\_\+init}} (uint8\+\_\+t pin)
+\begin{DoxyCompactList}\small\item\em Inicializa o pino como um botão. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{button_8c_a004fc2755427a4db654c5ab0c68c200e}{Button\+\_\+ispressed}} (uint8\+\_\+t pin)
+\begin{DoxyCompactList}\small\item\em Verifica se o botão está pressionado. \end{DoxyCompactList}\item 
+void $\ast$ \mbox{\hyperlink{button_8c_a4d96e863c9cd2f4fb8f0b50e21ce0d91}{Button\+\_\+onclick}} (uint8\+\_\+t pin, void $\ast$($\ast$callback)(void $\ast$), void $\ast$args)
+\begin{DoxyCompactList}\small\item\em Observa um clique no botão e dispara o callback quando o clique acontecer. \end{DoxyCompactList}\item 
+void $\ast$ \mbox{\hyperlink{button_8c_a32a6b53b48692916b8787b696ff4e9ac}{Button\+\_\+onrelease}} (uint8\+\_\+t pin, void $\ast$($\ast$callback)(void $\ast$), void $\ast$args)
+\begin{DoxyCompactList}\small\item\em Observa um botão ser solto e dispara o callback. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{button_8c_a24e8f3e30f36898b496ef95999937b28}\label{button_8c_a24e8f3e30f36898b496ef95999937b28}} 
+\index{button.\+c@{button.\+c}!Button\+\_\+init@{Button\+\_\+init}}
+\index{Button\+\_\+init@{Button\+\_\+init}!button.\+c@{button.\+c}}
+\subsubsection{\texorpdfstring{Button\+\_\+init()}{Button\_init()}}
+{\footnotesize\ttfamily void Button\+\_\+init (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{pin }\end{DoxyParamCaption})}
+
+
+
+Inicializa o pino como um botão. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pin} & Numeração do pino a ser inicializado. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{button_8c_a004fc2755427a4db654c5ab0c68c200e}\label{button_8c_a004fc2755427a4db654c5ab0c68c200e}} 
+\index{button.\+c@{button.\+c}!Button\+\_\+ispressed@{Button\+\_\+ispressed}}
+\index{Button\+\_\+ispressed@{Button\+\_\+ispressed}!button.\+c@{button.\+c}}
+\subsubsection{\texorpdfstring{Button\+\_\+ispressed()}{Button\_ispressed()}}
+{\footnotesize\ttfamily bool Button\+\_\+ispressed (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{pin }\end{DoxyParamCaption})}
+
+
+
+Verifica se o botão está pressionado. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pin} & Pino a realizar a verificação. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true Quando o pino está pressionado 
+
+false Quando o pino não está pressionado 
+\end{DoxyReturn}
+\mbox{\Hypertarget{button_8c_a4d96e863c9cd2f4fb8f0b50e21ce0d91}\label{button_8c_a4d96e863c9cd2f4fb8f0b50e21ce0d91}} 
+\index{button.\+c@{button.\+c}!Button\+\_\+onclick@{Button\+\_\+onclick}}
+\index{Button\+\_\+onclick@{Button\+\_\+onclick}!button.\+c@{button.\+c}}
+\subsubsection{\texorpdfstring{Button\+\_\+onclick()}{Button\_onclick()}}
+{\footnotesize\ttfamily void$\ast$ Button\+\_\+onclick (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{pin,  }\item[{void $\ast$($\ast$)(void $\ast$)}]{callback,  }\item[{void $\ast$}]{args }\end{DoxyParamCaption})}
+
+
+
+Observa um clique no botão e dispara o callback quando o clique acontecer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pin} & Pino do botão a ser observado. \\
+\hline
+{\em callback} & Ponteiro para uma função que é executado quando o clique acontecer \\
+\hline
+{\em args} & Argumentos para o callback \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void$\ast$ retorna o valor retornado pelo callback. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{button_8c_a32a6b53b48692916b8787b696ff4e9ac}\label{button_8c_a32a6b53b48692916b8787b696ff4e9ac}} 
+\index{button.\+c@{button.\+c}!Button\+\_\+onrelease@{Button\+\_\+onrelease}}
+\index{Button\+\_\+onrelease@{Button\+\_\+onrelease}!button.\+c@{button.\+c}}
+\subsubsection{\texorpdfstring{Button\+\_\+onrelease()}{Button\_onrelease()}}
+{\footnotesize\ttfamily void$\ast$ Button\+\_\+onrelease (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{pin,  }\item[{void $\ast$($\ast$)(void $\ast$)}]{callback,  }\item[{void $\ast$}]{args }\end{DoxyParamCaption})}
+
+
+
+Observa um botão ser solto e dispara o callback. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pin} & Pino do botão a ser observado. \\
+\hline
+{\em callback} & Ponteiro para uma função que é executado quando o botão for solto acontecer \\
+\hline
+{\em args} & Argumentos para o callback \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void$\ast$ retorna o valor retornado pelo callback. 
+\end{DoxyReturn}

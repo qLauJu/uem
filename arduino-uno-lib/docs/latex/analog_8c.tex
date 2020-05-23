@@ -1,0 +1,127 @@
+\hypertarget{analog_8c}{}\section{analog.\+c File Reference}
+\label{analog_8c}\index{analog.\+c@{analog.\+c}}
+{\ttfamily \#include \char`\"{}analog.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}bit.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}pin.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}sqr\+\_\+wave.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$avr/io.\+h$>$}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structtuple2}{tuple2}}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{analog_8c_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\+U\+LL}}~(void $\ast$)0x0
+\item 
+\#define \mbox{\hyperlink{analog_8c_a43bafb28b29491ec7f871319b5a3b2f8}{F\+\_\+\+C\+PU}}~16000000\+UL
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{analog_8c_ae57c04cbabcea8ae948a85e8c281c501}{Analog\+Write}} (uint8\+\_\+t pin, uint16\+\_\+t dc)
+\begin{DoxyCompactList}\small\item\em Escreve uma onda P\+WM no pino com o duty cycle definido. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structtuple2}{tuple2}} \mbox{\hyperlink{analog_8c_af551329386bb4d13b42827e0a9c416e6}{get\+\_\+prescaler}} (double freq)
+\item 
+\mbox{\hyperlink{structtuple2}{tuple2}} \mbox{\hyperlink{analog_8c_a2b42331121e48b506d31401b3d3e6916}{get\+\_\+prescaler2}} (double freq)
+\item 
+void \mbox{\hyperlink{analog_8c_ab9965c15d13f6a8a413fafd50d4540a2}{sqr\+\_\+wave}} (uint8\+\_\+t pin, double freq)
+\begin{DoxyCompactList}\small\item\em Escreve uma onda quadrada no pino. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{analog_8c_a43bafb28b29491ec7f871319b5a3b2f8}\label{analog_8c_a43bafb28b29491ec7f871319b5a3b2f8}} 
+\index{analog.\+c@{analog.\+c}!F\+\_\+\+C\+PU@{F\+\_\+\+C\+PU}}
+\index{F\+\_\+\+C\+PU@{F\+\_\+\+C\+PU}!analog.\+c@{analog.\+c}}
+\subsubsection{\texorpdfstring{F\+\_\+\+C\+PU}{F\_CPU}}
+{\footnotesize\ttfamily \#define F\+\_\+\+C\+PU~16000000\+UL}
+
+\mbox{\Hypertarget{analog_8c_a070d2ce7b6bb7e5c05602aa8c308d0c4}\label{analog_8c_a070d2ce7b6bb7e5c05602aa8c308d0c4}} 
+\index{analog.\+c@{analog.\+c}!N\+U\+LL@{N\+U\+LL}}
+\index{N\+U\+LL@{N\+U\+LL}!analog.\+c@{analog.\+c}}
+\subsubsection{\texorpdfstring{N\+U\+LL}{NULL}}
+{\footnotesize\ttfamily \#define N\+U\+LL~(void $\ast$)0x0}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{analog_8c_ae57c04cbabcea8ae948a85e8c281c501}\label{analog_8c_ae57c04cbabcea8ae948a85e8c281c501}} 
+\index{analog.\+c@{analog.\+c}!Analog\+Write@{Analog\+Write}}
+\index{Analog\+Write@{Analog\+Write}!analog.\+c@{analog.\+c}}
+\subsubsection{\texorpdfstring{Analog\+Write()}{AnalogWrite()}}
+{\footnotesize\ttfamily void Analog\+Write (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{pin,  }\item[{uint16\+\_\+t}]{dc }\end{DoxyParamCaption})}
+
+
+
+Escreve uma onda P\+WM no pino com o duty cycle definido. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pin} & Pino a escrever a onda, apenas os pinos 3, 5, 6, 9, 10 e 11 são suportados. \\
+\hline
+{\em dc} & Valor de duty cycle, o intervalo aceito é \mbox{[}0, 255\mbox{]} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{analog_8c_af551329386bb4d13b42827e0a9c416e6}\label{analog_8c_af551329386bb4d13b42827e0a9c416e6}} 
+\index{analog.\+c@{analog.\+c}!get\+\_\+prescaler@{get\+\_\+prescaler}}
+\index{get\+\_\+prescaler@{get\+\_\+prescaler}!analog.\+c@{analog.\+c}}
+\subsubsection{\texorpdfstring{get\+\_\+prescaler()}{get\_prescaler()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structtuple2}{tuple2}} get\+\_\+prescaler (\begin{DoxyParamCaption}\item[{double}]{freq }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{analog_8c_a2b42331121e48b506d31401b3d3e6916}\label{analog_8c_a2b42331121e48b506d31401b3d3e6916}} 
+\index{analog.\+c@{analog.\+c}!get\+\_\+prescaler2@{get\+\_\+prescaler2}}
+\index{get\+\_\+prescaler2@{get\+\_\+prescaler2}!analog.\+c@{analog.\+c}}
+\subsubsection{\texorpdfstring{get\+\_\+prescaler2()}{get\_prescaler2()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structtuple2}{tuple2}} get\+\_\+prescaler2 (\begin{DoxyParamCaption}\item[{double}]{freq }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{analog_8c_ab9965c15d13f6a8a413fafd50d4540a2}\label{analog_8c_ab9965c15d13f6a8a413fafd50d4540a2}} 
+\index{analog.\+c@{analog.\+c}!sqr\+\_\+wave@{sqr\+\_\+wave}}
+\index{sqr\+\_\+wave@{sqr\+\_\+wave}!analog.\+c@{analog.\+c}}
+\subsubsection{\texorpdfstring{sqr\+\_\+wave()}{sqr\_wave()}}
+{\footnotesize\ttfamily void sqr\+\_\+wave (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{pin,  }\item[{double}]{freq }\end{DoxyParamCaption})}
+
+
+
+Escreve uma onda quadrada no pino. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pin} & Numeração do pino. Pinos suportados 3, 5, 6, 9, 10 e 11 \\
+\hline
+{\em freq} & Frequência a ser escrita, intervalo \mbox{[}30.\+51, 8000000\mbox{]}hz \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{analog_8c_ab9af52e99b1e2bc7087607b27d56146a}\label{analog_8c_ab9af52e99b1e2bc7087607b27d56146a}} 
+\index{analog.\+c@{analog.\+c}!\+\_\+\+C\+O\+M0@{\+\_\+\+C\+O\+M0}}
+\index{\+\_\+\+C\+O\+M0@{\+\_\+\+C\+O\+M0}!analog.\+c@{analog.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+\+C\+O\+M0}{\_COM0}}
+{\footnotesize\ttfamily uint8\+\_\+t \+\_\+\+C\+O\+M0}
+
+\mbox{\Hypertarget{analog_8c_a44e317bb6f839a93c16983e32f994302}\label{analog_8c_a44e317bb6f839a93c16983e32f994302}} 
+\index{analog.\+c@{analog.\+c}!\+\_\+\+C\+O\+M1@{\+\_\+\+C\+O\+M1}}
+\index{\+\_\+\+C\+O\+M1@{\+\_\+\+C\+O\+M1}!analog.\+c@{analog.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+\+C\+O\+M1}{\_COM1}}
+{\footnotesize\ttfamily uint8\+\_\+t \+\_\+\+C\+O\+M1}
+
+\mbox{\Hypertarget{analog_8c_af9d4b3a12019a369e832fc6149910487}\label{analog_8c_af9d4b3a12019a369e832fc6149910487}} 
+\index{analog.\+c@{analog.\+c}!\+\_\+\+O\+CR@{\+\_\+\+O\+CR}}
+\index{\+\_\+\+O\+CR@{\+\_\+\+O\+CR}!analog.\+c@{analog.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+\+O\+CR}{\_OCR}}
+{\footnotesize\ttfamily volatile uint16\+\_\+t$\ast$ \+\_\+\+O\+CR}
+
+\mbox{\Hypertarget{analog_8c_a6881a6bcff6fd90cf0faadd9d4c61f2d}\label{analog_8c_a6881a6bcff6fd90cf0faadd9d4c61f2d}} 
+\index{analog.\+c@{analog.\+c}!\+\_\+\+T\+C\+CA@{\+\_\+\+T\+C\+CA}}
+\index{\+\_\+\+T\+C\+CA@{\+\_\+\+T\+C\+CA}!analog.\+c@{analog.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+\+T\+C\+CA}{\_TCCA}}
+{\footnotesize\ttfamily volatile uint8\+\_\+t$\ast$ \+\_\+\+T\+C\+CA}
+
+\mbox{\Hypertarget{analog_8c_a13f3bb71c79e385f3f8374219415358f}\label{analog_8c_a13f3bb71c79e385f3f8374219415358f}} 
+\index{analog.\+c@{analog.\+c}!\+\_\+\+T\+C\+CB@{\+\_\+\+T\+C\+CB}}
+\index{\+\_\+\+T\+C\+CB@{\+\_\+\+T\+C\+CB}!analog.\+c@{analog.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+\+T\+C\+CB}{\_TCCB}}
+{\footnotesize\ttfamily volatile uint8\+\_\+t$\ast$ \+\_\+\+T\+C\+CB}
+

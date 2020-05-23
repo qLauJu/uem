@@ -1,0 +1,91 @@
+\hypertarget{pin_8c}{}\section{pin.\+c File Reference}
+\label{pin_8c}\index{pin.\+c@{pin.\+c}}
+{\ttfamily \#include $<$avr/io.\+h$>$}\newline
+{\ttfamily \#include $<$bit.\+h$>$}\newline
+{\ttfamily \#include $<$pin.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{pin_8c_aa6ddb0ae5554ea2f1b9254e1985bacc4}{Pin\+Mode}} (uint8\+\_\+t pin, uint8\+\_\+t mode)
+\begin{DoxyCompactList}\small\item\em Define um pino como entrada, saída ou pull up. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{pin_8c_ab02e820a1ed8c8e0f68629b262a1203f}{Digital\+Write}} (uint8\+\_\+t pin, uint8\+\_\+t value)
+\begin{DoxyCompactList}\small\item\em Escreve o valor lógico 1 ou 0 no pino especificado. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{pin_8c_a379860e4c42182ae5824be8cd814ba9e}{Digital\+Read}} (uint8\+\_\+t pin)
+\begin{DoxyCompactList}\small\item\em Lê o valor lógico do pino. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{pin_8c_a379860e4c42182ae5824be8cd814ba9e}\label{pin_8c_a379860e4c42182ae5824be8cd814ba9e}} 
+\index{pin.\+c@{pin.\+c}!Digital\+Read@{Digital\+Read}}
+\index{Digital\+Read@{Digital\+Read}!pin.\+c@{pin.\+c}}
+\subsubsection{\texorpdfstring{Digital\+Read()}{DigitalRead()}}
+{\footnotesize\ttfamily uint8\+\_\+t Digital\+Read (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{pin }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Lê o valor lógico do pino. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pin} & Número do pino a ser lido. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint8\+\_\+t Retorna o valor lógico lido, podendo ser H\+I\+GH ou L\+OW. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{pin_8c_ab02e820a1ed8c8e0f68629b262a1203f}\label{pin_8c_ab02e820a1ed8c8e0f68629b262a1203f}} 
+\index{pin.\+c@{pin.\+c}!Digital\+Write@{Digital\+Write}}
+\index{Digital\+Write@{Digital\+Write}!pin.\+c@{pin.\+c}}
+\subsubsection{\texorpdfstring{Digital\+Write()}{DigitalWrite()}}
+{\footnotesize\ttfamily void Digital\+Write (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{pin,  }\item[{uint8\+\_\+t}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Escreve o valor lógico 1 ou 0 no pino especificado. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pin} & Número do pino a ser escrito. \\
+\hline
+{\em value} & Valor lógico a ser escrito no pino, podendo ser H\+I\+GH ou L\+OW. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{pin_8c_aa6ddb0ae5554ea2f1b9254e1985bacc4}\label{pin_8c_aa6ddb0ae5554ea2f1b9254e1985bacc4}} 
+\index{pin.\+c@{pin.\+c}!Pin\+Mode@{Pin\+Mode}}
+\index{Pin\+Mode@{Pin\+Mode}!pin.\+c@{pin.\+c}}
+\subsubsection{\texorpdfstring{Pin\+Mode()}{PinMode()}}
+{\footnotesize\ttfamily void Pin\+Mode (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{pin,  }\item[{uint8\+\_\+t}]{mode }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Define um pino como entrada, saída ou pull up. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pin} & Número do pino a ser configurado. \\
+\hline
+{\em mode} & Modo de configuração do pino, podendo ser I\+N\+P\+UT, O\+U\+T\+P\+UT ou P\+U\+L\+L\+\_\+\+UP \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{pin_8c_a75510c38576f5c737626e217e10281a8}\label{pin_8c_a75510c38576f5c737626e217e10281a8}} 
+\index{pin.\+c@{pin.\+c}!\+\_\+\+D\+DR@{\+\_\+\+D\+DR}}
+\index{\+\_\+\+D\+DR@{\+\_\+\+D\+DR}!pin.\+c@{pin.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+\+D\+DR}{\_DDR}}
+{\footnotesize\ttfamily volatile uint8\+\_\+t$\ast$ \+\_\+\+D\+DR}
+
+\mbox{\Hypertarget{pin_8c_a47a629deebd9cec760e6d9abcffbc8b7}\label{pin_8c_a47a629deebd9cec760e6d9abcffbc8b7}} 
+\index{pin.\+c@{pin.\+c}!\+\_\+\+P\+IN@{\+\_\+\+P\+IN}}
+\index{\+\_\+\+P\+IN@{\+\_\+\+P\+IN}!pin.\+c@{pin.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+\+P\+IN}{\_PIN}}
+{\footnotesize\ttfamily volatile uint8\+\_\+t$\ast$ \+\_\+\+P\+IN}
+
+\mbox{\Hypertarget{pin_8c_a7e18460881aa6788e655b42d8c7ca1a4}\label{pin_8c_a7e18460881aa6788e655b42d8c7ca1a4}} 
+\index{pin.\+c@{pin.\+c}!\+\_\+\+P\+O\+RT@{\+\_\+\+P\+O\+RT}}
+\index{\+\_\+\+P\+O\+RT@{\+\_\+\+P\+O\+RT}!pin.\+c@{pin.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+\+P\+O\+RT}{\_PORT}}
+{\footnotesize\ttfamily volatile uint8\+\_\+t$\ast$ \+\_\+\+P\+O\+RT}
+

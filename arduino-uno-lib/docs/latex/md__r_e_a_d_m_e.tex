@@ -1,0 +1,171 @@
+Helper functions for Arduino A\+VR
+
+\subsection*{Documentação}
+
+\subsubsection*{Pinos}
+
+Os pinos são mapeados de maneira que possam ser utilizados a partir da numeração do Arduino. A manipulação dos pinos podem ser realizadas por meio das funções abaixo localizadas no arquivo {\ttfamily \mbox{\hyperlink{pin_8h}{pin.\+h}}}\+:
+
+
+\begin{DoxyCode}
+\textcolor{keywordtype}{void} \mbox{\hyperlink{pin_8h_aa6ddb0ae5554ea2f1b9254e1985bacc4}{PinMode}}(uint8\_t pin, uint8\_t mode);
+\textcolor{keywordtype}{void} \mbox{\hyperlink{pin_8h_ab02e820a1ed8c8e0f68629b262a1203f}{DigitalWrite}}(uint8\_t pin, uint8\_t value);
+uint8\_t \mbox{\hyperlink{pin_8h_a379860e4c42182ae5824be8cd814ba9e}{DigitalRead}}(uint8\_t pin);
+\end{DoxyCode}
+
+
+Onde\+:
+\begin{DoxyItemize}
+\item Constantes para o modo do pino {\ttfamily I\+N\+P\+UT}, {\ttfamily O\+U\+T\+P\+UT} ou {\ttfamily P\+U\+L\+L\+\_\+\+UP}.
+\item Constantes para o valor lógico do pino {\ttfamily H\+I\+GH} ou {\ttfamily L\+OW}.
+\end{DoxyItemize}
+
+\paragraph*{Exemplo}
+
+
+\begin{DoxyCode}
+\textcolor{preprocessor}{#include "\mbox{\hyperlink{pin_8h}{pin.h}}"}
+
+\textcolor{preprocessor}{#define LED 11}
+
+\textcolor{keywordtype}{int} \mbox{\hyperlink{main_8c_a840291bc02cba5474a4cb46a9b9566fe}{main}}(\textcolor{keywordtype}{void}) \{
+
+  \mbox{\hyperlink{pin_8h_aa6ddb0ae5554ea2f1b9254e1985bacc4}{PinMode}}(LED, \mbox{\hyperlink{pin_8h_a61a3c9a18380aafb6e430e79bf596557}{OUTPUT}});
+  \mbox{\hyperlink{pin_8h_ab02e820a1ed8c8e0f68629b262a1203f}{DigitalWrite}}(LED, \mbox{\hyperlink{pin_8h_a5bb885982ff66a2e0a0a45a8ee9c35e2}{HIGH}});
+
+  \textcolor{keywordflow}{while} (1) \{\}
+
+  \textcolor{keywordflow}{return} 0;
+\}
+\end{DoxyCode}
+
+
+\subsubsection*{L\+ED}
+
+Há um componente de L\+ED localizado no arquivo {\ttfamily \mbox{\hyperlink{led_8h}{led.\+h}}}. A manipulação do L\+ED pode ser feita através das seguintes funções\+:
+
+
+\begin{DoxyCode}
+\textcolor{keywordtype}{void} \mbox{\hyperlink{led_8h_a2d207c115e6c59077fddfb3696a71686}{Led\_init}}(uint8\_t led);
+\textcolor{keywordtype}{void} \mbox{\hyperlink{led_8h_aee0154d3c2f16fff19fab871a3cf5468}{Led\_set}}(uint8\_t led, uint8\_t state);
+\textcolor{keywordtype}{void} \mbox{\hyperlink{led_8h_acd33cc1fd492aaea2d710ef97b8b6993}{Led\_swap}}(uint8\_t led);
+\textcolor{keywordtype}{void} \mbox{\hyperlink{led_8h_a2713c59befc263ea9e8f33a4cede5de7}{Led\_blink}}(uint8\_t led, uint32\_t delay);
+\end{DoxyCode}
+
+
+
+\begin{DoxyItemize}
+\item A função {\ttfamily Led\+\_\+init} é utilizada para configurar o pino como um L\+ED.
+\item A função {\ttfamily Led\+\_\+set} define o estado do L\+ED, {\ttfamily ON} ou {\ttfamily O\+FF}.
+\item A função {\ttfamily Led\+\_\+swap} troca o estado do L\+ED, se está {\ttfamily ON} troca para {\ttfamily O\+FF} e se está {\ttfamily O\+FF} troca para {\ttfamily ON}.
+\item A função {\ttfamily Led\+\_\+blink} recebe um parâmetro {\ttfamily delay} e pisca o L\+ED por {\ttfamily delay} ms.
+\end{DoxyItemize}
+
+\paragraph*{Exemplo}
+
+
+\begin{DoxyCode}
+\textcolor{preprocessor}{#include "\mbox{\hyperlink{led_8h}{led.h}}"}
+
+\textcolor{preprocessor}{#define LED 11}
+
+\textcolor{keywordtype}{int} \mbox{\hyperlink{main_8c_a840291bc02cba5474a4cb46a9b9566fe}{main}}(\textcolor{keywordtype}{void}) \{
+  \mbox{\hyperlink{led_8h_a2d207c115e6c59077fddfb3696a71686}{Led\_init}}(LED);
+
+  \textcolor{keywordflow}{while}(1)  
+    \mbox{\hyperlink{led_8h_a2713c59befc263ea9e8f33a4cede5de7}{Led\_blink}}(LED, 500);
+
+  \textcolor{keywordflow}{return} 0;
+\}
+\end{DoxyCode}
+
+
+\subsubsection*{Atraso}
+
+Há duas funções de atraso, uma com presição de milisegundos e outra com precisão de microsegundos. Ambas rotinas são implementadas em assembly no arquivo {\ttfamily \mbox{\hyperlink{__delay_8s}{\+\_\+delay.\+s}}} e executadas a partir das funções definidas em {\ttfamily \mbox{\hyperlink{delay_8h}{delay.\+h}}}.
+
+
+\begin{DoxyCode}
+\textcolor{keywordtype}{void} \mbox{\hyperlink{delay_8c_ab7cce8122024d7ba47bf10f434956de4}{delay\_ms}}(uint32\_t ms);
+\textcolor{keywordtype}{void} \mbox{\hyperlink{delay_8c_ab33ebb2c5ca2d80d259c64a9d658589f}{delay\_us}}(uint32\_t us);
+\end{DoxyCode}
+
+
+\subsubsection*{Sensor de distância}
+
+O componente de sensor de distância é definido no arquivo {\ttfamily \mbox{\hyperlink{dst__sensor_8h}{dst\+\_\+sensor.\+h}}}. Ele consiste da definição de 2 pinos. Tal componente é manipulado pelas funções\+:
+
+
+\begin{DoxyCode}
+\textcolor{keywordtype}{void} \mbox{\hyperlink{dst__sensor_8c_a0b9337c7ac7811f15b47570565bbd914}{DstSensor\_init}}(\mbox{\hyperlink{struct_dst_sensor}{DstSensor}} *dst);
+uint32\_t \mbox{\hyperlink{dst__sensor_8c_af201c139b62a0b1b36de3f03ddf4062f}{DstSensor\_read}}(\mbox{\hyperlink{struct_dst_sensor}{DstSensor}} *dst);
+\end{DoxyCode}
+
+
+
+\begin{DoxyItemize}
+\item A função {\ttfamily Dst\+Sensor\+\_\+init} configura o componente.
+\item A função {\ttfamily Dst\+Sensor\+\_\+read} realiza a leitura de distância e retorna o valor em cm.
+\end{DoxyItemize}
+
+A estrutura {\ttfamily \mbox{\hyperlink{struct_dst_sensor}{Dst\+Sensor}}} é uma estrutura contendo os campos {\ttfamily trigger} e {\ttfamily echo}, que são pinos do componente.
+
+\paragraph*{Exemplo}
+
+
+\begin{DoxyCode}
+\textcolor{preprocessor}{#include "\mbox{\hyperlink{dst__sensor_8h}{dst\_sensor.h}}"}
+
+\textcolor{preprocessor}{#define TRIGGER 9}
+\textcolor{preprocessor}{#define ECHO 10}
+
+\textcolor{keywordtype}{int} \mbox{\hyperlink{main_8c_a840291bc02cba5474a4cb46a9b9566fe}{main}}(\textcolor{keywordtype}{void}) \{
+
+  \mbox{\hyperlink{struct_dst_sensor}{DstSensor}} dst = \{ .\mbox{\hyperlink{struct_dst_sensor_ae328ec33ec4922371de944665ae70e32}{trigger}} = TRIGGER, .echo = ECHO \};
+  \mbox{\hyperlink{dst__sensor_8c_a0b9337c7ac7811f15b47570565bbd914}{DstSensor\_init}}(&dst);
+
+  \textcolor{keywordflow}{while} (1) \{
+    uint32\_t distance = \mbox{\hyperlink{dst__sensor_8c_af201c139b62a0b1b36de3f03ddf4062f}{DstSensor\_read}}(&dst);
+    \textcolor{comment}{// Use a distância lida.}
+  \}
+
+  \textcolor{keywordflow}{return} 0;
+\}
+\end{DoxyCode}
+
+
+\subsubsection*{Display 7 segmentos}
+
+\subsubsection*{Button}
+
+
+\begin{DoxyCode}
+\textcolor{preprocessor}{#include "\mbox{\hyperlink{button_8h}{button.h}}"}
+\textcolor{preprocessor}{#include "\mbox{\hyperlink{delay_8h}{delay.h}}"}
+\textcolor{preprocessor}{#include "\mbox{\hyperlink{led_8h}{led.h}}"}
+\textcolor{preprocessor}{#include <stdbool.h>}
+\textcolor{preprocessor}{#include <stddef.h>}
+
+\textcolor{keywordtype}{void} *on\_click(\textcolor{keywordtype}{void} *args) \{
+  uint8\_t led = *(uint8\_t *)args;
+  \mbox{\hyperlink{led_8h_acd33cc1fd492aaea2d710ef97b8b6993}{Led\_swap}}(led);
+  \textcolor{keywordflow}{return} \mbox{\hyperlink{analog_8c_a070d2ce7b6bb7e5c05602aa8c308d0c4}{NULL}};
+\}
+
+\textcolor{keywordtype}{int} \mbox{\hyperlink{main_8c_a840291bc02cba5474a4cb46a9b9566fe}{main}}(\textcolor{keywordtype}{void}) \{
+  \textcolor{keyword}{const} uint8\_t led = 2;
+  \textcolor{keyword}{const} uint8\_t btn = 3;
+
+  \mbox{\hyperlink{button_8c_a24e8f3e30f36898b496ef95999937b28}{Button\_init}}(btn);
+  \mbox{\hyperlink{led_8h_a2d207c115e6c59077fddfb3696a71686}{Led\_init}}(led);
+
+  \textcolor{keywordflow}{while} (\textcolor{keyword}{true}) \{
+    \mbox{\hyperlink{button_8c_a4d96e863c9cd2f4fb8f0b50e21ce0d91}{Button\_onclick}}(btn, on\_click, (\textcolor{keywordtype}{void} *)&led);
+    \textcolor{comment}{// ou}
+    \textcolor{comment}{// BUTTON\_ONCLICK(btn, Led\_swap(led));}
+  \}
+
+  \textcolor{keywordflow}{return} 0;
+\}
+\end{DoxyCode}
+ 

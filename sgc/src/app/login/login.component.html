@@ -1,0 +1,39 @@
+<div class="bg"></div>
+<div class="section">
+  <h1 class="title">Sgc</h1>
+  <div class="container">
+    <div class="columns">
+      <div class="column"></div>
+      <div class="column is-half">
+        <div class="box">
+          <div class="notification is-danger" *ngIf="errorMessage">
+            <button class="delete" (click)="errorMessage = null"></button> {{errorMessage}}
+          </div>
+          <form>
+            <div class="field">
+              <label class="label">Documento</label>
+              <p class="control">
+                <input [(ngModel)]="usuario.documento" name="documento" type="text" class="input" placeholder="CPF/CNPJ">
+              </p>
+            </div>
+            <div class="field">
+              <label class="label">Senha</label>
+              <p class="control">
+                <input [(ngModel)]="usuario.senha" name="senha" type="password" class="input">
+              </p>
+            </div>
+            <div class="field is-grouped">
+              <p class="control" id="loginButton">
+                <button type="submit" class="button is-primary" (click)="login()" [class.is-loading]="isLoading">Entrar</button>
+              </p>
+            </div>
+          </form>
+        </div>
+        <p class="control" id="reg">
+          Não possui cadastro? <a routerLink="/registrar" span id="regLink">Registre-se</a>
+        </p>
+      </div>
+      <div class="column"></div>
+    </div>
+  </div>
+</div>

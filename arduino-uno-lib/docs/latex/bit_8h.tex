@@ -1,0 +1,44 @@
+\hypertarget{bit_8h}{}\section{include/bit.h File Reference}
+\label{bit_8h}\index{include/bit.\+h@{include/bit.\+h}}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{bit_8h_a0fdf60a0656320865c5eeccd49d26eb7}{sbi}}(R\+EG,  N)~((R\+EG) $\vert$= (1 $<$$<$ (N)))
+\begin{DoxyCompactList}\small\item\em Ativa o bit N no registrador R\+EG. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{bit_8h_a6b6a745d98373e883993dd866eebf5f0}{cbi}}(R\+EG,  N)~((R\+EG) \&= $\sim$(1 $<$$<$ (N)))
+\begin{DoxyCompactList}\small\item\em Desativa o bit N no registrador R\+EG. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{bit_8h_a62162022b7af91ab55e200a099cb05c8}{is\+\_\+bit\+\_\+set}}(R\+EG,  N)~(((R\+EG) $>$$>$ (N)) \& 1)
+\begin{DoxyCompactList}\small\item\em Verifica se o bit N está ativo no registrador R\+EG. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{bit_8h_a6b6a745d98373e883993dd866eebf5f0}\label{bit_8h_a6b6a745d98373e883993dd866eebf5f0}} 
+\index{bit.\+h@{bit.\+h}!cbi@{cbi}}
+\index{cbi@{cbi}!bit.\+h@{bit.\+h}}
+\subsubsection{\texorpdfstring{cbi}{cbi}}
+{\footnotesize\ttfamily \#define cbi(\begin{DoxyParamCaption}\item[{}]{R\+EG,  }\item[{}]{N }\end{DoxyParamCaption})~((R\+EG) \&= $\sim$(1 $<$$<$ (N)))}
+
+
+
+Desativa o bit N no registrador R\+EG. 
+
+\mbox{\Hypertarget{bit_8h_a62162022b7af91ab55e200a099cb05c8}\label{bit_8h_a62162022b7af91ab55e200a099cb05c8}} 
+\index{bit.\+h@{bit.\+h}!is\+\_\+bit\+\_\+set@{is\+\_\+bit\+\_\+set}}
+\index{is\+\_\+bit\+\_\+set@{is\+\_\+bit\+\_\+set}!bit.\+h@{bit.\+h}}
+\subsubsection{\texorpdfstring{is\+\_\+bit\+\_\+set}{is\_bit\_set}}
+{\footnotesize\ttfamily \#define is\+\_\+bit\+\_\+set(\begin{DoxyParamCaption}\item[{}]{R\+EG,  }\item[{}]{N }\end{DoxyParamCaption})~(((R\+EG) $>$$>$ (N)) \& 1)}
+
+
+
+Verifica se o bit N está ativo no registrador R\+EG. 
+
+\mbox{\Hypertarget{bit_8h_a0fdf60a0656320865c5eeccd49d26eb7}\label{bit_8h_a0fdf60a0656320865c5eeccd49d26eb7}} 
+\index{bit.\+h@{bit.\+h}!sbi@{sbi}}
+\index{sbi@{sbi}!bit.\+h@{bit.\+h}}
+\subsubsection{\texorpdfstring{sbi}{sbi}}
+{\footnotesize\ttfamily \#define sbi(\begin{DoxyParamCaption}\item[{}]{R\+EG,  }\item[{}]{N }\end{DoxyParamCaption})~((R\+EG) $\vert$= (1 $<$$<$ (N)))}
+
+
+
+Ativa o bit N no registrador R\+EG. 
+

@@ -1,0 +1,23 @@
+def sum(x: int, y: int): int {
+    return x + y;
+}
+
+def main(): int {
+    var x = 4, y = 5: int;
+
+    b = x;
+    
+    if (x < y) {
+        if (x + y < 10) {
+            x = 10;
+        }
+    } else {
+        y = 10;
+    }
+
+    x = sum(x, 2 * y);
+
+    write x;
+
+    return 0;
+}

@@ -1,0 +1,151 @@
+<div *ngIf="pedido">
+  <div class="modal" [class.is-active]="modalAberto">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+      <div class="card">
+        <div class="card-header">
+          <p class="card-header-title">
+            Termos e Condições de Uso
+          </p>
+        </div>
+        <div class="card-content">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed sodales ex, sit amet scelerisque risus. Sed ultrices
+          ligula nisi, in feugiat sapien condimentum sed. Suspendisse suscipit velit eu metus eleifend, eget lacinia massa
+          eleifend. Duis molestie sem sed eros tincidunt sollicitudin. Quisque nulla ligula, congue id sapien quis, efficitur
+          tempor risus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec eu nisl sit amet mauris eleifend
+          suscipit id sed augue. Praesent nec lectus a dolor dapibus molestie non eget lectus. In quis luctus tortor. Vestibulum
+          feugiat enim risus, nec imperdiet neque molestie nec. Sed leo risus, facilisis vel lectus eget, laoreet commodo
+          dui. Cras sagittis nibh non nulla blandit, pretium eleifend tortor convallis. Aliquam ut bibendum purus. In eu
+          ligula nulla. Quisque vestibulum in sapien non dignissim.
+          <br> Suspendisse luctus, erat lacinia hendrerit aliquet, sem quam interdum ligula, a sodales odio est et metus. Vestibulum
+          blandit erat quam, sit amet dictum ante luctus in. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+          Sed imperdiet ipsum non purus interdum tempor. Etiam lobortis dui eros, ac varius urna consequat id. Phasellus
+          vel felis nisi. Donec cursus, dui vitae fringilla ultricies, tortor justo fermentum ipsum, congue consequat magna
+          magna id leo.
+          <br> Sed neque eros, vestibulum quis vestibulum ac, commodo in turpis. Donec mollis maximus felis, quis sagittis lacus
+          vulputate vel. Duis accumsan ante leo, vel aliquet ex finibus sed. Praesent posuere vitae quam quis interdum. Morbi
+          nec metus diam. Aliquam imperdiet, ex a sodales fermentum, velit turpis mattis enim, in interdum dolor sapien et
+          nunc. Nulla non justo ut ex consequat aliquam. Nunc eleifend euismod interdum. Duis ac lacus vel mi mattis luctus
+          nec sit amet dolor. Pellentesque felis ex, faucibus id sem porta, fermentum suscipit dui. Pellentesque habitant
+          morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur nec justo ullamcorper, varius
+          lacus ac, dapibus tortor. Aliquam est magna, ultrices volutpat aliquam et, lobortis id tortor. Nam aliquet, quam
+          finibus vestibulum finibus, eros lacus pellentesque neque, in ultrices magna turpis nec lacus. Pellentesque elit
+          nisi, convallis ut ultrices ut, lacinia commodo urna.
+          <br> Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras a libero et lectus
+          viverra porttitor eget et eros. Fusce nulla ante, commodo id felis non, facilisis luctus eros. Nulla dui enim,
+          ultricies dapibus porta nec, ullamcorper eget neque. Cras magna libero, sagittis ac pretium ut, suscipit eget odio.
+          Maecenas magna justo, porta tincidunt hendrerit sit amet, vehicula eget odio. In quam sem, finibus eget congue
+          at, consequat sed enim.
+          <br> Fusce ut mattis lorem. Duis posuere elit sed dui finibus, in elementum lectus faucibus. Proin lectus nibh, consectetur
+          vel rutrum in, placerat sit amet magna. Maecenas lorem felis, posuere at velit in, semper vehicula lacus. Quisque
+          sollicitudin condimentum nulla, non commodo velit feugiat sit amet. Sed et interdum libero. Integer mattis est
+          odio, ut suscipit lacus scelerisque vel. Quisque dictum mauris neque, pellentesque rutrum dolor semper eget. Sed
+          a lorem auctor, ultrices arcu sed, suscipit sem. Etiam enim ante, dapibus ac nisl placerat, maximus laoreet purus.
+          Ut enim urna, tincidunt in dolor eu, iaculis viverra sem. Nullam elit leo, finibus ut aliquet vel, varius nec sapien.
+          Morbi lacinia dui turpis, sit amet aliquet erat elementum et. Nam id elementum augue, ac auctor est. Proin venenatis
+          tristique dolor vitae sodales. Ut quis consequat erat.
+        </div>
+      </div>
+    </div>
+    <button class="modal-close" (click)="modalAberto = false"></button>
+  </div>
+
+  <form>
+
+    <div class="field" *ngIf="mostrarCampoCliente">
+      <label class="label">Cliente</label>
+      <p class="control">
+        <input auto-complete [(ngModel)]="pedido.clienteDocumento" class="input" type="text" name="cliente" [source]="documentosClientes">
+      </p>
+    </div>
+
+    <div class="field">
+      <label class="label">Endereço</label>
+      <p class="control">
+        <input [(ngModel)]="pedido.endereco" class="input" type="text" name="endereco">
+      </p>
+    </div>
+
+    <div class="field">
+      <div class="columns">
+        <div class="column">
+          <label class="label">Tamanho</label>
+          <p class="control">
+            <input auto-complete type="text" [(ngModel)]="pedido.tamanhoCacamba" class="input" name="tamanho" (ngModelChange)="tamanhoCacambaChanged()"
+              [source]="cacambasTamanhos">
+          </p>
+        </div>
+        <div class="column">
+          <label class="label">Desc. Caçambas</label>
+          <p class="control">
+            <input auto-complete type="text" [(ngModel)]="pedido.descricaoCacamba" class="input" name="descricaoCacamba" (ngModelChange)="formChanged()"
+              [source]="cacambasDescricoes">
+          </p>
+        </div>
+        <div class="column">
+          <label class="label">Qtde. Caçambas</label>
+          <p class="control is-expanded">
+            <input [(ngModel)]="pedido.qtdeCacambas" type="number" class="input" name="qtdeCacambas" (ngModelChange)="formChanged()"
+              min="1">
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="field">
+      <div class="columns">
+        <div class="column">
+          <label class="label">Data de entrega</label>
+          <p class="control is-expanded">
+            <p-calendar [(ngModel)]="dataEntrega" dateFormat="dd/mm/yy" name="dataEntrega" class="input"></p-calendar>
+          </p>
+        </div>
+        <div class="column">
+          <label class="label">Qtde. Dias</label>
+          <p class="control is-expanded">
+            <input [(ngModel)]="pedido.qtdeDias" type="number" class="input" name="qtdeDias" (ngModelChange)="formChanged()" min="1">
+          </p>
+        </div>
+        <div class="column">
+          <label class="label">Data de devolução</label>
+          <p class="control is-expanded">
+            <input type="text" class="input" name="dataDevolucao" value="{{dataDevolucao | date:'dd/MM/yyyy'}}" disabled>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="field">
+      <label class="label">Observações</label>
+      <p class="control">
+        <textarea [(ngModel)]="pedido.observacoes" class="textarea" placeholder="Exemplo: Realizar entrega na hora do almoço." name="observacoes"></textarea>
+      </p>
+    </div>
+
+    <div class="field">
+      <p class="control">
+        <label class="checkbox">
+          <input type="checkbox"> Eu aceito os
+          <a href="javascript:void" (click)="modalAberto = true">termos e condições</a> de locação.
+        </label>
+      </p>
+    </div>
+
+    <div class="field">
+      <div class="columns">
+        <div class="column">
+          <p class="control">
+            <button *ngIf="!isEditing" class="button is-primary is-medium" (click)="cadastrar()" [class.is-loading]="isLoading">Criar</button>
+            <button *ngIf="isEditing" class="button is-primary is-medium" (click)="editar()" [class.is-loading]="isLoading">Editar</button>
+          </p>
+        </div>
+        <div class="column"></div>
+        <div class="column">
+          <p class="control">
+            <input type="text" class="input is-medium has-text-right" value="{{valorTotal | currency:'BRL':true}}" disabled>
+          </p>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>

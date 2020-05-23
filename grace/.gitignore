@@ -1,0 +1,80 @@
+
+# Created by https://www.gitignore.io/api/c++,flex
+
+### C++ ###
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+### Flex ###
+
+# Build and Release Folders
+bin/
+bin-debug/
+bin-release/
+.actionScriptProperties
+
+# only for a non-library project
+.flexProperties
+
+# only for library project
+.flexLibProperties
+
+
+# Other files and folders
+.settings/
+.project/
+
+.FlexUnitSettings
+.externalToolBuilders
+.model
+
+
+# End of https://www.gitignore.io/api/c++,flex
+
+#Vim swp files
+*.swp
+
+#Generated files
+parser.cc
+parser.hh
+
+src/location.hh
+src/position.hh
+src/stack.hh
+
+grace
+.DS_Store
+
+build/
+cmake-build-debug/
+.vscode/

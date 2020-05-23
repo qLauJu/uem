@@ -1,0 +1,16 @@
+{
+  "files.associations": {
+    "*.ll": "lex",
+    "stdbool.h": "c",
+    "led.h": "c",
+    "delay.h": "c",
+    "seg7.h": "c",
+    "pin.h": "c",
+    "stddef.h": "c",
+    "stdio.h": "c",
+    "bit.h": "c",
+    "io.h": "c",
+    "string.h": "c",
+    "iom328p.h": "c"
+  }
+}

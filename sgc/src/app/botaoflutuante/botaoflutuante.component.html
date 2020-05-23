@@ -1,0 +1,74 @@
+<div class="modal" [class.is-active]="modalAparecendo">
+  <div class="modal-background"></div>
+  <div class="modal-content">
+
+    <!-- Menu Opções -->
+    <div *ngIf="mostrarMenuOpcoes">
+      <div class="card">
+        <div class="card-content">
+          <div class="tabs is-centered">
+            <ul>
+              <li><a (click)="mostrarFormularioPedido()">Pedido</a></li>
+              <li><a (click)="mostrarFormularioCliente()">Cliente</a></li>
+              <li><a (click)="mostrarFormularioCacamba()">Caçamba</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Criar pedido -->
+    <div *ngIf="mostrarCriarPedido">
+      <div class="card">
+        <div class="card-header">
+          <p class="card-header-title">
+            Criar Pedido
+          </p>
+        </div>
+        <div class="card-content">
+          <app-cadastro-pedido></app-cadastro-pedido>
+        </div>
+      </div>
+    </div>
+    <!-- Criar pedido -->
+
+    <!-- Criar cliente -->
+    <div *ngIf="mostrarCriarCliente">
+      <div class="card">
+        <div class="card-header">
+          <p class="card-header-title">
+            Criar Cliente
+          </p>
+        </div>
+        <div class="card-content">
+          <app-cadastro-cliente></app-cadastro-cliente>
+        </div>
+      </div>
+    </div>
+    <!-- Criar cliente -->
+
+    <!-- Criar caçamba -->
+    <div *ngIf="mostrarCriarCacamba">
+      <div class="card">
+        <div class="card-header">
+          <p class="card-header-title">
+            Criar Caçamba
+          </p>
+        </div>
+        <div class="card-content">
+          <app-cadastro-cacamba></app-cadastro-cacamba>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- Criar pedido -->
+  <button class="modal-close" (click)="esconderModal()"></button>
+</div>
+
+<div class="fab">
+  <a class="button is-primary is-large" (click)="mostrarModal()">
+    <span class="icon is-small">
+      <i class="fa fa-plus"></i>
+    </span>
+  </a>
+</div>

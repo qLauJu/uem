@@ -1,0 +1,28 @@
+\hypertarget{analog_8h}{}\section{include/analog.h File Reference}
+\label{analog_8h}\index{include/analog.\+h@{include/analog.\+h}}
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{analog_8h_ae57c04cbabcea8ae948a85e8c281c501}{Analog\+Write}} (uint8\+\_\+t pin, uint16\+\_\+t dc)
+\begin{DoxyCompactList}\small\item\em Escreve uma onda P\+WM no pino com o duty cycle definido. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{analog_8h_ae57c04cbabcea8ae948a85e8c281c501}\label{analog_8h_ae57c04cbabcea8ae948a85e8c281c501}} 
+\index{analog.\+h@{analog.\+h}!Analog\+Write@{Analog\+Write}}
+\index{Analog\+Write@{Analog\+Write}!analog.\+h@{analog.\+h}}
+\subsubsection{\texorpdfstring{Analog\+Write()}{AnalogWrite()}}
+{\footnotesize\ttfamily void Analog\+Write (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{pin,  }\item[{uint16\+\_\+t}]{dc }\end{DoxyParamCaption})}
+
+
+
+Escreve uma onda P\+WM no pino com o duty cycle definido. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pin} & Pino a escrever a onda, apenas os pinos 3, 5, 6, 9, 10 e 11 são suportados. \\
+\hline
+{\em dc} & Valor de duty cycle, o intervalo aceito é \mbox{[}0, 255\mbox{]} \\
+\hline
+\end{DoxyParams}

@@ -1,0 +1,43 @@
+<div class="columns">
+  <div class="column">
+    <div class="box has-text-centered">
+      <span class="is-size-1">{{painel.nroPedidos}}</span><br>
+      <span class="">{{painel.nroPedidos == 1 ? "Pedido" : "Pedidos"}}</span>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="box has-text-centered">
+      <span class="is-size-1">{{painel.faturamento | currency:'BRL': true}}</span><br>
+      <span class="">Faturamento</span>
+    </div>
+  </div>
+</div>
+
+<table *ngIf="pedidos.length > 0" class="table is-bordered">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Cliente</th>
+      <th>Endereço</th>
+      <th>Tam.</th>
+      <th>Desc.</th>
+      <th>Qtde.</th>
+      <th>Data Devolução</th>
+      <th>Valor</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let pedido of pedidos">
+      <th>{{pedido.id}}</th>
+      <td>{{pedido.clienteDocumento}}</td>
+      <td>{{pedido.endereco}}</td>
+      <td>{{pedido.tamanhoCacamba}}</td>
+      <td>{{pedido.descricaoCacamba}}</td>
+      <td>{{pedido.qtdeCacambas}}</td>
+      <td>{{pedido.dataDevolucao | date:'dd/MM/yy'}}</td>
+      <td>{{pedido.valorTotal | currency:'BRL': true}}</td>
+      <td>{{pedido.status}}</td>
+  </tbody>
+</table>

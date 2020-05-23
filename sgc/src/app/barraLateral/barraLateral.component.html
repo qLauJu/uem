@@ -1,0 +1,13 @@
+<aside class="menu">
+  <ul class="menu-list">
+    <li>
+      <a routerLink="pedidos" routerLinkActive="is-active">Pedidos</a>
+    </li>
+    <li *ngIf="usuarioGerente">
+      <a routerLink="clientes" routerLinkActive="is-active">Clientes</a>
+    </li>
+    <li>
+      <a routerLink="cacambas" routerLinkActive="is-active">Caçambas</a>
+    </li>
+  </ul>
+</aside>

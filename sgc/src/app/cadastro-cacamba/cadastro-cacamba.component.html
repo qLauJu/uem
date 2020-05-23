@@ -1,0 +1,52 @@
+<div *ngIf="cacamba">
+    <form>
+  
+      <div class="field">
+        <div class="columns">
+          <div class="column">
+            <label class="label">Tamanho</label>
+            <p class="control is-expanded">
+              <input auto-complete [(ngModel)]="cacamba.tamanho" name="tamanho" class="input" type="text" [disabled]="estaEditando" [source]="cacambasTamanhos" (ngModelChange)="tamanhoChanged()">
+            </p>
+          </div>
+          <div class="column">
+            <label class="label">Descrição</label>
+            <p class="control">
+              <input auto-complete [(ngModel)]="cacamba.descricao" class="input" type="text" name="tipo" [source]="cacambasDescricoes">
+            </p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="field">
+        <div class="columns">
+          <div class="column">
+            <label class="label">Quantidade</label>
+            <p class="control">
+              <input [(ngModel)]="cacamba.quantidade" type="number" class="input" name="quantidade" [disabled]="quantidades.length == 1">
+            </p>
+          </div>
+          <div class="column">
+            <label class="label">Valor</label>
+            <p class="control">
+              <input [(ngModel)]="cacamba.valor" type="number" class="input" min="0.00" step="0.01" name="valor">
+            </p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="field">
+        <label class="label">Observações</label>
+        <p class="control">
+          <textarea [(ngModel)]="cacamba.observacoes" class="textarea" name="observacoes"></textarea>
+        </p>
+      </div>
+  
+      <div class="field">
+        <p class="control">
+          <button *ngIf="!estaEditando" class="button is-primary is-medium" (click)="cadastrar()" [class.is-loading]="estaCarregando">Criar</button>
+          <button *ngIf="estaEditando" class="button is-primary is-medium" (click)="editar()" [class.is-loading]="estaCarregando">Editar</button>
+        </p>
+      </div>
+    </form>
+  </div>

@@ -1,0 +1,18 @@
+def main(): int {
+    var a = 5, b = 10: int;
+    var x = true, y = true: bool;
+
+    a = -b;
+    x = !y;
+
+    if (a != b) {
+        a += 1;
+    }
+
+    if(a == b) {
+        a = b + 10;
+    }
+
+
+    return 0;
+}

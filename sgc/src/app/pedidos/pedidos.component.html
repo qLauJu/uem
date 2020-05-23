@@ -1,0 +1,61 @@
+<div class="modal" [class.is-active]="selectedPedido != null">
+  <div class="modal-background"></div>
+  <div class="modal-content">
+
+    <div class="card">
+      <div class="card-header">
+        <p class="card-header-title">
+          Editar Pedido
+        </p>
+      </div>
+      <div class="card-content">
+        <app-cadastro-pedido [pedido]="selectedPedido" [isEditing]="true"></app-cadastro-pedido>
+      </div>
+    </div>
+
+  </div>
+
+  <button class="modal-close" (click)="esconderModal()"></button>
+</div>
+
+<table class="table is-bordered">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Cliente</th>
+      <th>Endereço</th>
+      <th>Tam.</th>
+      <th>Desc.</th>
+      <th>Qtde.</th>
+      <th>Data Entrega</th>
+      <th>Data Devolução</th>
+      <th>Valor</th>
+      <th>Status</th>
+      <th class="spaceTh"></th>   
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let pedido of pedidos" on-mouseover="mostrarIcones(pedido.id)" on-mouseleave="esconderIcones()">
+      <th>{{pedido.id}}</th>
+      <td>{{pedido.clienteDocumento}}</td>
+      <td>{{pedido.endereco}}</td>
+      <td>{{pedido.tamanhoCacamba}}</td>
+      <td>{{pedido.descricaoCacamba}}</td>
+      <td>{{pedido.qtdeCacambas}}</td>
+      <td>{{pedido.dataEntrega | date:'dd/MM/yy'}}</td>
+      <td>{{pedido.dataDevolucao | date:'dd/MM/yy'}}</td>
+      <td>{{pedido.valorTotal | currency:'BRL': true}}</td>
+      <td>
+        <div class="select is-small">
+        <select [(ngModel)]="pedido.status" (ngModelChange)="alterarStatus(pedido)" [disabled]="!isGerente">
+          <option *ngFor="let status of statuses" value="{{status}}">{{status}}</option>
+        </select>
+        </div>
+      </td>
+      <div *ngIf="mostraIcones && pedido.id == pedidoId">
+        <span class="icon is-small"><label title="Editar"><a class="fa fa-pencil-square" (click)="editar(pedido)" aria-hidden="true"></a></label></span>
+        <span class="icon is-small"><label title="Excluir"><a class="fa fa-times-circle" (click)="excluir(pedido.id)" aria-hidden="true"></a></label></span>
+      </div>
+    </tr>
+  </tbody>
+</table>

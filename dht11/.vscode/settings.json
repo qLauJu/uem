@@ -1,0 +1,10 @@
+{
+  "files.associations": {
+    "*.ll": "lex",
+    "arduino.h": "c",
+    "stdbool.h": "c",
+    "uart.h": "c",
+    "dht11.h": "c",
+    "bit.h": "c"
+  }
+}

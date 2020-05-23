@@ -1,0 +1,10 @@
+def main():int {
+  var result1 = 10: int;
+
+  result1 += 10;
+  result1 /= 5;
+  result1 -= 100;
+  result1 *= 100;
+  
+  return result1;
+}

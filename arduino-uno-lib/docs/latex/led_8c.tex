@@ -1,0 +1,82 @@
+\hypertarget{led_8c}{}\section{led.\+c File Reference}
+\label{led_8c}\index{led.\+c@{led.\+c}}
+{\ttfamily \#include \char`\"{}led.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}delay.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{led_8c_a2d207c115e6c59077fddfb3696a71686}{Led\+\_\+init}} (uint8\+\_\+t led)
+\begin{DoxyCompactList}\small\item\em Inicializa o pino como um L\+ED. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{led_8c_aee0154d3c2f16fff19fab871a3cf5468}{Led\+\_\+set}} (uint8\+\_\+t led, uint8\+\_\+t state)
+\begin{DoxyCompactList}\small\item\em Atribui o estado ON ou O\+FF ao L\+ED. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{led_8c_acd33cc1fd492aaea2d710ef97b8b6993}{Led\+\_\+swap}} (uint8\+\_\+t led)
+\begin{DoxyCompactList}\small\item\em Troca o estado do L\+ED. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{led_8c_a2713c59befc263ea9e8f33a4cede5de7}{Led\+\_\+blink}} (uint8\+\_\+t led, uint32\+\_\+t duration)
+\begin{DoxyCompactList}\small\item\em Pisca o L\+ED com uma duração. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{led_8c_a2713c59befc263ea9e8f33a4cede5de7}\label{led_8c_a2713c59befc263ea9e8f33a4cede5de7}} 
+\index{led.\+c@{led.\+c}!Led\+\_\+blink@{Led\+\_\+blink}}
+\index{Led\+\_\+blink@{Led\+\_\+blink}!led.\+c@{led.\+c}}
+\subsubsection{\texorpdfstring{Led\+\_\+blink()}{Led\_blink()}}
+{\footnotesize\ttfamily void Led\+\_\+blink (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{led,  }\item[{uint32\+\_\+t}]{duration }\end{DoxyParamCaption})}
+
+
+
+Pisca o L\+ED com uma duração. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em led} & Pino do L\+ED \\
+\hline
+{\em duration} & Duração em milisegundos. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{led_8c_a2d207c115e6c59077fddfb3696a71686}\label{led_8c_a2d207c115e6c59077fddfb3696a71686}} 
+\index{led.\+c@{led.\+c}!Led\+\_\+init@{Led\+\_\+init}}
+\index{Led\+\_\+init@{Led\+\_\+init}!led.\+c@{led.\+c}}
+\subsubsection{\texorpdfstring{Led\+\_\+init()}{Led\_init()}}
+{\footnotesize\ttfamily void Led\+\_\+init (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{led }\end{DoxyParamCaption})}
+
+
+
+Inicializa o pino como um L\+ED. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em led} & Pino a ser utilizado como L\+ED \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{led_8c_aee0154d3c2f16fff19fab871a3cf5468}\label{led_8c_aee0154d3c2f16fff19fab871a3cf5468}} 
+\index{led.\+c@{led.\+c}!Led\+\_\+set@{Led\+\_\+set}}
+\index{Led\+\_\+set@{Led\+\_\+set}!led.\+c@{led.\+c}}
+\subsubsection{\texorpdfstring{Led\+\_\+set()}{Led\_set()}}
+{\footnotesize\ttfamily void Led\+\_\+set (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{led,  }\item[{uint8\+\_\+t}]{state }\end{DoxyParamCaption})}
+
+
+
+Atribui o estado ON ou O\+FF ao L\+ED. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em led} & Pino a ser atribuído o estado. \\
+\hline
+{\em state} & Estado ON ou O\+FF para atribuir ao pino. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{led_8c_acd33cc1fd492aaea2d710ef97b8b6993}\label{led_8c_acd33cc1fd492aaea2d710ef97b8b6993}} 
+\index{led.\+c@{led.\+c}!Led\+\_\+swap@{Led\+\_\+swap}}
+\index{Led\+\_\+swap@{Led\+\_\+swap}!led.\+c@{led.\+c}}
+\subsubsection{\texorpdfstring{Led\+\_\+swap()}{Led\_swap()}}
+{\footnotesize\ttfamily void Led\+\_\+swap (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{led }\end{DoxyParamCaption})}
+
+
+
+Troca o estado do L\+ED. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em led} & Pino a ter o estado trocado. \\
+\hline
+\end{DoxyParams}

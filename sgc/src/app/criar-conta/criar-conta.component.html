@@ -1,0 +1,120 @@
+<div class="bg"></div>
+<span class="icon is-medium" id="backButton">
+    <a routerLink="/login"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+  </span>
+<div class="modal" [class.is-active]="modalAberto">
+  <div class="modal-background"></div>
+  <div class="modal-content">
+    <div class="card">
+      <div class="card-header">
+        <p class="card-header-title">
+          Termos e Condições de Uso
+        </p>
+      </div>
+      <div class="card-content">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed sodales ex, sit amet scelerisque risus. Sed ultrices
+        ligula nisi, in feugiat sapien condimentum sed. Suspendisse suscipit velit eu metus eleifend, eget lacinia massa
+        eleifend. Duis molestie sem sed eros tincidunt sollicitudin. Quisque nulla ligula, congue id sapien quis, efficitur
+        tempor risus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec eu nisl sit amet mauris eleifend
+        suscipit id sed augue. Praesent nec lectus a dolor dapibus molestie non eget lectus. In quis luctus tortor. Vestibulum
+        feugiat enim risus, nec imperdiet neque molestie nec. Sed leo risus, facilisis vel lectus eget, laoreet commodo dui.
+        Cras sagittis nibh non nulla blandit, pretium eleifend tortor convallis. Aliquam ut bibendum purus. In eu ligula
+        nulla. Quisque vestibulum in sapien non dignissim.
+        <br> Suspendisse luctus, erat lacinia hendrerit aliquet, sem quam interdum ligula, a sodales odio est et metus. Vestibulum
+        blandit erat quam, sit amet dictum ante luctus in. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+        Sed imperdiet ipsum non purus interdum tempor. Etiam lobortis dui eros, ac varius urna consequat id. Phasellus vel
+        felis nisi. Donec cursus, dui vitae fringilla ultricies, tortor justo fermentum ipsum, congue consequat magna magna
+        id leo.
+        <br> Sed neque eros, vestibulum quis vestibulum ac, commodo in turpis. Donec mollis maximus felis, quis sagittis
+        lacus vulputate vel. Duis accumsan ante leo, vel aliquet ex finibus sed. Praesent posuere vitae quam quis interdum.
+        Morbi nec metus diam. Aliquam imperdiet, ex a sodales fermentum, velit turpis mattis enim, in interdum dolor sapien
+        et nunc. Nulla non justo ut ex consequat aliquam. Nunc eleifend euismod interdum. Duis ac lacus vel mi mattis luctus
+        nec sit amet dolor. Pellentesque felis ex, faucibus id sem porta, fermentum suscipit dui. Pellentesque habitant morbi
+        tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur nec justo ullamcorper, varius lacus ac,
+        dapibus tortor. Aliquam est magna, ultrices volutpat aliquam et, lobortis id tortor. Nam aliquet, quam finibus vestibulum
+        finibus, eros lacus pellentesque neque, in ultrices magna turpis nec lacus. Pellentesque elit nisi, convallis ut
+        ultrices ut, lacinia commodo urna.
+        <br> Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras a libero et lectus
+        viverra porttitor eget et eros. Fusce nulla ante, commodo id felis non, facilisis luctus eros. Nulla dui enim, ultricies
+        dapibus porta nec, ullamcorper eget neque. Cras magna libero, sagittis ac pretium ut, suscipit eget odio. Maecenas
+        magna justo, porta tincidunt hendrerit sit amet, vehicula eget odio. In quam sem, finibus eget congue at, consequat
+        sed enim.
+        <br> Fusce ut mattis lorem. Duis posuere elit sed dui finibus, in elementum lectus faucibus. Proin lectus nibh, consectetur
+        vel rutrum in, placerat sit amet magna. Maecenas lorem felis, posuere at velit in, semper vehicula lacus. Quisque
+        sollicitudin condimentum nulla, non commodo velit feugiat sit amet. Sed et interdum libero. Integer mattis est odio,
+        ut suscipit lacus scelerisque vel. Quisque dictum mauris neque, pellentesque rutrum dolor semper eget. Sed a lorem
+        auctor, ultrices arcu sed, suscipit sem. Etiam enim ante, dapibus ac nisl placerat, maximus laoreet purus. Ut enim
+        urna, tincidunt in dolor eu, iaculis viverra sem. Nullam elit leo, finibus ut aliquet vel, varius nec sapien. Morbi
+        lacinia dui turpis, sit amet aliquet erat elementum et. Nam id elementum augue, ac auctor est. Proin venenatis tristique
+        dolor vitae sodales. Ut quis consequat erat.
+      </div>
+    </div>
+  </div>
+  <button class="modal-close" (click)="modalAberto = false"></button>
+</div>
+
+<div class="section">
+  <h1 class="title">Criar conta</h1>
+  <div class="container">
+    <div class="columns">
+      <div class="column"></div>
+      <div class="column is-half">
+        <div class="box">
+          <div class="notification is-danger" *ngIf="errorMessage">
+            <button class="delete" (click)="errorMessage = null"></button> {{errorMessage}}
+          </div>
+          <form>
+            <div class="field">
+              <label class="label">Nome</label>
+              <p class="control">
+                <input [(ngModel)]="usuario.nome" name="nome" type="text" class="input">
+              </p>
+            </div>
+            <div class="field">
+              <label class="label">E-mail</label>
+              <p class="control">
+                <input [(ngModel)]="usuario.email" name="email" type="email" class="input">
+              </p>
+            </div>
+            <div class="field">
+              <label class="label">Documento</label>
+              <p class="control">
+                <input [(ngModel)]="usuario.documento" name="documento" type="text" class="input" placeholder="CPF/CNPJ">
+              </p>
+            </div>
+            <div class="field">
+              <label class="label">Senha</label>
+              <p class="control">
+                <input [(ngModel)]="usuario.senha" name="senha" type="password" class="input">
+              </p>
+            </div>
+            <div class="field">
+              <label class="label">Repetir senha</label>
+              <p class="control">
+                <input [(ngModel)]="repetirSenha" name="repetir_senha" type="password" class="input">
+              </p>
+            </div>
+            <div class="field">
+              <p class="control">
+                <label class="checkbox">
+                  <input type="checkbox">
+
+                  Eu aceito os <a href="javascript:void(0)" (click)="modalAberto = true" ng-keydown="handleKeyEvent($event);" >termos e condições</a> de uso.
+                </label>
+              </p>
+            </div>
+            <div class="field is-grouped">
+              <p class="control" id="regButton">
+                <button type="submit" class="button is-primary" (click)="register()" [class.is-loading]="isLoading">Criar</button>
+              </p>
+            </div>
+          </form>
+        </div>
+        <p class="control" id="log">
+          Já possui uma conta? <a routerLink="/login" id="logLink">Entre</a>
+        </p>
+      </div>
+      <div class="column"></div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,25 @@
+<form>
+  <div class="field">
+    <label class="label">Nome</label>
+    <p class="control">
+      <input [(ngModel)]="usuario.nome" name="nome" type="text" class="input">
+    </p>
+  </div>
+  <div class="field">
+    <label class="label">E-mail</label>
+    <p class="control">
+      <input [(ngModel)]="usuario.email" name="email" type="email" class="input">
+    </p>
+  </div>
+  <div class="field">
+    <label class="label">Documento</label>
+    <p class="control">
+      <input [(ngModel)]="usuario.documento" name="documento" type="text" class="input" placeholder="CPF/CNPJ">
+    </p>
+  </div>
+  <div class="field is-grouped">
+    <p class="control" id="regButton">
+      <button type="submit" class="button is-primary" (click)="criar()" [class.is-loading]="carregando">Criar</button>
+    </p>
+  </div>
+</form>

@@ -1,0 +1,147 @@
+\hypertarget{button_8h}{}\section{include/button.h File Reference}
+\label{button_8h}\index{include/button.\+h@{include/button.\+h}}
+{\ttfamily \#include \char`\"{}delay.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}pin.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{button_8h_a2b6d8c68a9643aeeaa8ac286f8b50b5a}{B\+U\+T\+T\+O\+N\+\_\+\+O\+N\+C\+L\+I\+CK}}(btn,  action)
+\begin{DoxyCompactList}\small\item\em Macro que realiza uma ação quando o botão é pressionado. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{button_8h_af39ca41007426e460ae69df9a095c624}{B\+U\+T\+T\+O\+N\+\_\+\+O\+N\+R\+E\+L\+E\+A\+SE}}(btn,  action)
+\begin{DoxyCompactList}\small\item\em Macro que realiza uma ação quando o botão é solto. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{button_8h_a24e8f3e30f36898b496ef95999937b28}{Button\+\_\+init}} (uint8\+\_\+t pin)
+\begin{DoxyCompactList}\small\item\em Inicializa o pino como um botão. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{button_8h_a004fc2755427a4db654c5ab0c68c200e}{Button\+\_\+ispressed}} (uint8\+\_\+t pin)
+\begin{DoxyCompactList}\small\item\em Verifica se o botão está pressionado. \end{DoxyCompactList}\item 
+void $\ast$ \mbox{\hyperlink{button_8h_a4d96e863c9cd2f4fb8f0b50e21ce0d91}{Button\+\_\+onclick}} (uint8\+\_\+t pin, void $\ast$($\ast$callback)(void $\ast$), void $\ast$args)
+\begin{DoxyCompactList}\small\item\em Observa um clique no botão e dispara o callback quando o clique acontecer. \end{DoxyCompactList}\item 
+void $\ast$ \mbox{\hyperlink{button_8h_a32a6b53b48692916b8787b696ff4e9ac}{Button\+\_\+onrelease}} (uint8\+\_\+t pin, void $\ast$($\ast$callback)(void $\ast$), void $\ast$args)
+\begin{DoxyCompactList}\small\item\em Observa um botão ser solto e dispara o callback. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{button_8h_a2b6d8c68a9643aeeaa8ac286f8b50b5a}\label{button_8h_a2b6d8c68a9643aeeaa8ac286f8b50b5a}} 
+\index{button.\+h@{button.\+h}!B\+U\+T\+T\+O\+N\+\_\+\+O\+N\+C\+L\+I\+CK@{B\+U\+T\+T\+O\+N\+\_\+\+O\+N\+C\+L\+I\+CK}}
+\index{B\+U\+T\+T\+O\+N\+\_\+\+O\+N\+C\+L\+I\+CK@{B\+U\+T\+T\+O\+N\+\_\+\+O\+N\+C\+L\+I\+CK}!button.\+h@{button.\+h}}
+\subsubsection{\texorpdfstring{B\+U\+T\+T\+O\+N\+\_\+\+O\+N\+C\+L\+I\+CK}{BUTTON\_ONCLICK}}
+{\footnotesize\ttfamily \#define B\+U\+T\+T\+O\+N\+\_\+\+O\+N\+C\+L\+I\+CK(\begin{DoxyParamCaption}\item[{}]{btn,  }\item[{}]{action }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{if} (\mbox{\hyperlink{button_8h_a004fc2755427a4db654c5ab0c68c200e}{Button\_ispressed}}(btn)) \{                                                 \(\backslash\)
+    action;                                                                    \(\backslash\)
+    while (\mbox{\hyperlink{button_8h_a004fc2755427a4db654c5ab0c68c200e}{Button\_ispressed}}(btn))                                              \(\backslash\)
+      ;                                                                        \(\backslash\)
+    delay\_ms(10);                                                              \(\backslash\)
+  \}
+\end{DoxyCode}
+
+
+Macro que realiza uma ação quando o botão é pressionado. 
+
+\mbox{\Hypertarget{button_8h_af39ca41007426e460ae69df9a095c624}\label{button_8h_af39ca41007426e460ae69df9a095c624}} 
+\index{button.\+h@{button.\+h}!B\+U\+T\+T\+O\+N\+\_\+\+O\+N\+R\+E\+L\+E\+A\+SE@{B\+U\+T\+T\+O\+N\+\_\+\+O\+N\+R\+E\+L\+E\+A\+SE}}
+\index{B\+U\+T\+T\+O\+N\+\_\+\+O\+N\+R\+E\+L\+E\+A\+SE@{B\+U\+T\+T\+O\+N\+\_\+\+O\+N\+R\+E\+L\+E\+A\+SE}!button.\+h@{button.\+h}}
+\subsubsection{\texorpdfstring{B\+U\+T\+T\+O\+N\+\_\+\+O\+N\+R\+E\+L\+E\+A\+SE}{BUTTON\_ONRELEASE}}
+{\footnotesize\ttfamily \#define B\+U\+T\+T\+O\+N\+\_\+\+O\+N\+R\+E\+L\+E\+A\+SE(\begin{DoxyParamCaption}\item[{}]{btn,  }\item[{}]{action }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{if} (\mbox{\hyperlink{button_8h_a004fc2755427a4db654c5ab0c68c200e}{Button\_ispressed}}(btn)) \{                                                 \(\backslash\)
+    while (\mbox{\hyperlink{button_8h_a004fc2755427a4db654c5ab0c68c200e}{Button\_ispressed}}(btn))                                              \(\backslash\)
+      ;                                                                        \(\backslash\)
+    action;                                                                    \(\backslash\)
+    delay\_ms(10);                                                              \(\backslash\)
+  \}
+\end{DoxyCode}
+
+
+Macro que realiza uma ação quando o botão é solto. 
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{button_8h_a24e8f3e30f36898b496ef95999937b28}\label{button_8h_a24e8f3e30f36898b496ef95999937b28}} 
+\index{button.\+h@{button.\+h}!Button\+\_\+init@{Button\+\_\+init}}
+\index{Button\+\_\+init@{Button\+\_\+init}!button.\+h@{button.\+h}}
+\subsubsection{\texorpdfstring{Button\+\_\+init()}{Button\_init()}}
+{\footnotesize\ttfamily void Button\+\_\+init (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{pin }\end{DoxyParamCaption})}
+
+
+
+Inicializa o pino como um botão. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pin} & Numeração do pino a ser inicializado. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{button_8h_a004fc2755427a4db654c5ab0c68c200e}\label{button_8h_a004fc2755427a4db654c5ab0c68c200e}} 
+\index{button.\+h@{button.\+h}!Button\+\_\+ispressed@{Button\+\_\+ispressed}}
+\index{Button\+\_\+ispressed@{Button\+\_\+ispressed}!button.\+h@{button.\+h}}
+\subsubsection{\texorpdfstring{Button\+\_\+ispressed()}{Button\_ispressed()}}
+{\footnotesize\ttfamily bool Button\+\_\+ispressed (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{pin }\end{DoxyParamCaption})}
+
+
+
+Verifica se o botão está pressionado. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pin} & Pino a realizar a verificação. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true Quando o pino está pressionado 
+
+false Quando o pino não está pressionado 
+\end{DoxyReturn}
+\mbox{\Hypertarget{button_8h_a4d96e863c9cd2f4fb8f0b50e21ce0d91}\label{button_8h_a4d96e863c9cd2f4fb8f0b50e21ce0d91}} 
+\index{button.\+h@{button.\+h}!Button\+\_\+onclick@{Button\+\_\+onclick}}
+\index{Button\+\_\+onclick@{Button\+\_\+onclick}!button.\+h@{button.\+h}}
+\subsubsection{\texorpdfstring{Button\+\_\+onclick()}{Button\_onclick()}}
+{\footnotesize\ttfamily void$\ast$ Button\+\_\+onclick (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{pin,  }\item[{void $\ast$($\ast$)(void $\ast$)}]{callback,  }\item[{void $\ast$}]{args }\end{DoxyParamCaption})}
+
+
+
+Observa um clique no botão e dispara o callback quando o clique acontecer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pin} & Pino do botão a ser observado. \\
+\hline
+{\em callback} & Ponteiro para uma função que é executado quando o clique acontecer \\
+\hline
+{\em args} & Argumentos para o callback \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void$\ast$ retorna o valor retornado pelo callback. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{button_8h_a32a6b53b48692916b8787b696ff4e9ac}\label{button_8h_a32a6b53b48692916b8787b696ff4e9ac}} 
+\index{button.\+h@{button.\+h}!Button\+\_\+onrelease@{Button\+\_\+onrelease}}
+\index{Button\+\_\+onrelease@{Button\+\_\+onrelease}!button.\+h@{button.\+h}}
+\subsubsection{\texorpdfstring{Button\+\_\+onrelease()}{Button\_onrelease()}}
+{\footnotesize\ttfamily void$\ast$ Button\+\_\+onrelease (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{pin,  }\item[{void $\ast$($\ast$)(void $\ast$)}]{callback,  }\item[{void $\ast$}]{args }\end{DoxyParamCaption})}
+
+
+
+Observa um botão ser solto e dispara o callback. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pin} & Pino do botão a ser observado. \\
+\hline
+{\em callback} & Ponteiro para uma função que é executado quando o botão for solto acontecer \\
+\hline
+{\em args} & Argumentos para o callback \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void$\ast$ retorna o valor retornado pelo callback. 
+\end{DoxyReturn}

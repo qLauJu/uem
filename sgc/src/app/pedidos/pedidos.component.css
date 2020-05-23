@@ -1,0 +1,13 @@
+table tr, table td, table th {
+    text-align: center;
+}
+
+.table.is-bordered th.spaceTh{
+    border-width: 0px;
+    border-bottom-color: transparent;
+}
+
+.icon{
+    margin: 3px 0 0 6px;
+    display: block;
+}

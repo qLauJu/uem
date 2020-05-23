@@ -1,0 +1,45 @@
+<div class="modal" [class.is-active]="selectedCacamba != null">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+  
+      <div class="card">
+        <div class="card-header">
+          <p class="card-header-title">
+            Editar Caçamba
+          </p>
+        </div>
+        <div class="card-content">
+          <app-cadastro-cacamba [cacamba]="selectedCacamba" [estaEditando]="true"></app-cadastro-cacamba>
+        </div>
+      </div>
+  
+    </div>
+  
+    <button class="modal-close" (click)="esconderModal()"></button>
+  </div>
+  
+  <table class="table is-bordered">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Descrição</th>
+        <th>Tamanho</th>
+        <th>Quantidade</th>
+        <th>Valor</th>
+        <th class="spaceTh"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let cacamba of cacambas" on-mouseover="mostrarIcones(cacamba.id)" on-mouseleave="esconderIcones()">
+        <th>{{cacamba.id}}</th>
+        <td>{{cacamba.descricao}}</td>
+        <td>{{cacamba.tamanho}}</td>
+        <td>{{cacamba.quantidade}}</td>
+        <td>{{cacamba.valor | currency:'BRL':true}}</td>
+        <div *ngIf="mostraIcones && cacamba.id == cacambaId">
+          <span class="icon is-small"><label title="Editar"><a class="fa fa-pencil-square" (click)="editar(cacamba)" aria-hidden="true"></a></label></span>
+          <span class="icon is-small"><label title="Excluir"><a class="fa fa-times-circle" (click)="excluir(cacamba.id)" aria-hidden="true"></a></label></span>
+        </div>
+      </tr>
+    </tbody>
+  </table>
